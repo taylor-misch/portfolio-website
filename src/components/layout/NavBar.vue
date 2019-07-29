@@ -4,16 +4,28 @@
       <span>Taylor Misch</span>
     </v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-btn text @click="$vuetify.goTo('#home', easeInOutQuart)">Home</v-btn>
-    <v-btn text @click="$vuetify.goTo('#about', easeInOutQuart)">About</v-btn>
-    <v-btn text @click="$vuetify.goTo('#experience', easeInOutQuart)">Experience</v-btn>
-    <v-btn text @click="$vuetify.goTo('#projects', easeInOutQuart)">Projects</v-btn>
-    <v-btn text @click="$vuetify.goTo('#interests', easeInOutQuart)">Interests</v-btn>
+    <v-btn text @click="$vuetify.goTo('#home', options)">Home</v-btn>
+    <v-btn text @click="$vuetify.goTo('#about', options)">About</v-btn>
+    <v-btn text @click="$vuetify.goTo('#experience', options)">Experience</v-btn>
+    <v-btn text @click="$vuetify.goTo('#projects', options)">Projects</v-btn>
+    <v-btn text @click="$vuetify.goTo('#interests', options)">Interests</v-btn>
+    <v-btn text @click="$vuetify.goTo('#contact', options)">Contact</v-btn>
   </v-app-bar>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "NavBar",
+  computed: {
+    options() {
+      return {
+        duration: 1500,
+        offset: 0,
+        easing: "easeInOutCubic"
+      };
+    }
+  }
+};
 </script>
 
 <style scoped>

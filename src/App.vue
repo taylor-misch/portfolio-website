@@ -3,11 +3,15 @@
     <NavBar />
     <v-content>
       <Home />
-      <About />
-      <Experience />
-      <Projects />
-      <Interests />
+      <v-container>
+        <About />
+        <Experience />
+        <Projects />
+        <Interests />
+        <Contact />
+      </v-container>
     </v-content>
+    <Footer />
   </v-app>
 </template>
 
@@ -18,6 +22,8 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Interests from "./components/Interests";
+import Contact from "./components/Contact";
+import Footer from "./components/layout/Footer";
 
 export default {
   name: "App",
@@ -27,7 +33,9 @@ export default {
     Experience,
     Projects,
     Interests,
-    NavBar
+    NavBar,
+    Contact,
+    Footer
   },
   data: () => ({
     //
