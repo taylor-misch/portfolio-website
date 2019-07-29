@@ -1,49 +1,36 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-
-    <h1 id="home">Home</h1>
-    <h1 id="about">About Me</h1>
-    <p>
-      Taylor is a software developer. He graduated from the University of
-      Wisconsin - Eau Claire in 2019 with a degree in Computer Science.
-      Throughout his college career he learned the fundementals of programming
-      through his schoolwork, the inner-workings of business through his
-      internships, and how to think entreneaurally during his time a an original
-      member of the Clearwater Labs student run software development company
-      startup during his senior year.
-    </p>
-    <p>
-      This website features some his professional experinece, projects, and
-      interests. Feel free to look around, explore his GitHub, or reach out to
-      him on LinkedIn.
-    </p>
-    <h1 id="professional">Professional</h1>
-    Just testing out the build process to see how it works
-    <h1 id="projects">Projects</h1>
-    <h1 id="interests">Interests</h1>
-  </div>
+  <v-app>
+    <NavBar />
+    <v-content>
+      <Home />
+      <About />
+      <Experience />
+      <Projects />
+      <Interests />
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import NavBar from "./components/layout/NavBar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Interests from "./components/Interests";
 
 export default {
-  name: "app",
+  name: "App",
   components: {
-    HelloWorld
-  }
+    Home,
+    About,
+    Experience,
+    Projects,
+    Interests,
+    NavBar
+  },
+  data: () => ({
+    //
+  })
 };
 </script>
-
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
