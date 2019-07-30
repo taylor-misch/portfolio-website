@@ -1,7 +1,31 @@
 <template>
   <div id="interests">
     <h1>Interests</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, ab nam minima id perferendis unde magnam voluptas praesentium, ullam reprehenderit architecto optio incidunt excepturi animi laboriosam deserunt sunt itaque delectus et amet iure veniam inventore autem. Error sed porro tempora sunt maxime omnis similique necessitatibus repudiandae nostrum cum voluptate ea impedit, reiciendis tempore quia explicabo, maiores dicta! Molestiae voluptate ut rem minima, impedit saepe soluta reprehenderit libero cum reiciendis, blanditiis nulla error velit! Dolorem ea at quasi! Voluptatum facere rem consequatur accusantium at, ipsa obcaecati ea exercitationem sit? Laudantium fugiat fuga magni facilis non exercitationem dolorem odio, cum tempore. Ad voluptatum voluptatibus quam quae aliquid sapiente, harum possimus fuga nemo molestias odio, dolore, aliquam ratione! Ut esse architecto vitae excepturi quis corrupti, vel maiores mollitia? Sequi odio, dolore accusantium aliquid impedit ut repellendus provident quaerat ullam exercitationem voluptatum veritatis nulla possimus voluptate veniam? At, sint, quas eos aut, magni iste maiores ratione sit eum cum voluptatem. Architecto itaque minima consequatur, nesciunt eveniet amet tenetur officiis natus possimus omnis voluptatibus iure, autem, aliquam error magnam? Magnam ad eaque minus voluptatibus minima quae iure, vel cum nisi aliquid magni, quasi error placeat corrupti? Mollitia quis labore modi, qui dignissimos deleniti aspernatur, consequatur, ab soluta quam error. Suscipit iure aut aperiam delectus quia blanditiis recusandae in libero eligendi error deleniti similique, hic esse magnam facilis praesentium perspiciatis! Blanditiis ratione modi dolorem voluptatem, quos dolore nam autem laboriosam provident dolor ipsa voluptates rem aperiam sint voluptas! Magnam cumque, eligendi, vero ut incidunt est consectetur autem sequi, laborum at reprehenderit. Voluptatum, quibusdam! Illum itaque nobis recusandae ullam magni aspernatur doloremque, minima excepturi incidunt sunt sequi dolorem. Ut, excepturi tempora illum dolore amet commodi tenetur sed consequuntur consectetur ducimus quas magnam iure perferendis. Placeat, qui quo tenetur est suscipit cupiditate animi. Molestiae earum exercitationem doloremque nesciunt ullam quidem odit nostrum iure neque beatae ipsam rem non quod sint at id, similique molestias dignissimos? Sunt deserunt harum illum, vel libero eum ipsa reiciendis. Unde molestiae quam explicabo nostrum? Ab quo quia dolorem debitis quidem! Placeat minima quas magni! Exercitationem dolores nulla quae sapiente temporibus voluptas aperiam soluta non magni dolore tenetur voluptatem amet, consequuntur nemo autem praesentium aut. Repellat minus aliquid neque ut voluptatem fugit ipsum expedita. Quos voluptas perspiciatis veniam, provident nesciunt omnis sunt, magni deserunt excepturi illum quam aperiam dolorem aliquam nisi eius! Quod autem impedit repellendus temporibus numquam hic, beatae et esse molestias rerum nesciunt tempora eos. Temporibus aut repellendus nam atque esse quisquam et quas accusamus ducimus! Quis obcaecati, eius qui ab quas labore debitis at voluptas laudantium quos adipisci praesentium officiis quae perferendis, hic reiciendis porro rerum repellendus provident distinctio iure. Provident eveniet iste libero earum ratione dolorem voluptas officiis, illum fuga nemo reiciendis mollitia laborum inventore delectus optio quibusdam veritatis vel dolores eum! Praesentium rem quas sed? Magnam quo at facere voluptas, perspiciatis culpa? Repudiandae magnam et ipsum? Natus maxime mollitia quas nisi asperiores nihil, odit labore molestias amet minus deserunt recusandae fugit ducimus tenetur consequuntur enim eius, molestiae velit. Recusandae.</p>
+    <div class="interest">
+      <h3>Hackathons</h3>
+      <ul>
+        <li>MadHacks 2017 & 2018</li>
+        <li>MinneHacks 2018 & 2019</li>
+        <li>HuskieHacks 2017</li>
+      </ul>
+    </div>
+
+    <div class="interest">
+      <h3>Software Development</h3>
+      <ul>
+        <li>Vue.js</li>
+        <li>React.js</li>
+        <li>Unity Game Developement</li>
+      </ul>
+    </div>
+
+    <div class="interest">
+      <h3>Music</h3>
+      <ul>
+        <li>Piano</li>
+        <li>Guitar</li>
+      </ul>
+    </div>
   </div>
 </template>
 

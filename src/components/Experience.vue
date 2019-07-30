@@ -1,7 +1,95 @@
 <template>
   <div id="experience">
     <h1>Experience</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, ab nam minima id perferendis unde magnam voluptas praesentium, ullam reprehenderit architecto optio incidunt excepturi animi laboriosam deserunt sunt itaque delectus et amet iure veniam inventore autem. Error sed porro tempora sunt maxime omnis similique necessitatibus repudiandae nostrum cum voluptate ea impedit, reiciendis tempore quia explicabo, maiores dicta! Molestiae voluptate ut rem minima, impedit saepe soluta reprehenderit libero cum reiciendis, blanditiis nulla error velit! Dolorem ea at quasi! Voluptatum facere rem consequatur accusantium at, ipsa obcaecati ea exercitationem sit? Laudantium fugiat fuga magni facilis non exercitationem dolorem odio, cum tempore. Ad voluptatum voluptatibus quam quae aliquid sapiente, harum possimus fuga nemo molestias odio, dolore, aliquam ratione! Ut esse architecto vitae excepturi quis corrupti, vel maiores mollitia? Sequi odio, dolore accusantium aliquid impedit ut repellendus provident quaerat ullam exercitationem voluptatum veritatis nulla possimus voluptate veniam? At, sint, quas eos aut, magni iste maiores ratione sit eum cum voluptatem. Architecto itaque minima consequatur, nesciunt eveniet amet tenetur officiis natus possimus omnis voluptatibus iure, autem, aliquam error magnam? Magnam ad eaque minus voluptatibus minima quae iure, vel cum nisi aliquid magni, quasi error placeat corrupti? Mollitia quis labore modi, qui dignissimos deleniti aspernatur, consequatur, ab soluta quam error. Suscipit iure aut aperiam delectus quia blanditiis recusandae in libero eligendi error deleniti similique, hic esse magnam facilis praesentium perspiciatis! Blanditiis ratione modi dolorem voluptatem, quos dolore nam autem laboriosam provident dolor ipsa voluptates rem aperiam sint voluptas! Magnam cumque, eligendi, vero ut incidunt est consectetur autem sequi, laborum at reprehenderit. Voluptatum, quibusdam! Illum itaque nobis recusandae ullam magni aspernatur doloremque, minima excepturi incidunt sunt sequi dolorem. Ut, excepturi tempora illum dolore amet commodi tenetur sed consequuntur consectetur ducimus quas magnam iure perferendis. Placeat, qui quo tenetur est suscipit cupiditate animi. Molestiae earum exercitationem doloremque nesciunt ullam quidem odit nostrum iure neque beatae ipsam rem non quod sint at id, similique molestias dignissimos? Sunt deserunt harum illum, vel libero eum ipsa reiciendis. Unde molestiae quam explicabo nostrum? Ab quo quia dolorem debitis quidem! Placeat minima quas magni! Exercitationem dolores nulla quae sapiente temporibus voluptas aperiam soluta non magni dolore tenetur voluptatem amet, consequuntur nemo autem praesentium aut. Repellat minus aliquid neque ut voluptatem fugit ipsum expedita. Quos voluptas perspiciatis veniam, provident nesciunt omnis sunt, magni deserunt excepturi illum quam aperiam dolorem aliquam nisi eius! Quod autem impedit repellendus temporibus numquam hic, beatae et esse molestias rerum nesciunt tempora eos. Temporibus aut repellendus nam atque esse quisquam et quas accusamus ducimus! Quis obcaecati, eius qui ab quas labore debitis at voluptas laudantium quos adipisci praesentium officiis quae perferendis, hic reiciendis porro rerum repellendus provident distinctio iure. Provident eveniet iste libero earum ratione dolorem voluptas officiis, illum fuga nemo reiciendis mollitia laborum inventore delectus optio quibusdam veritatis vel dolores eum! Praesentium rem quas sed? Magnam quo at facere voluptas, perspiciatis culpa? Repudiandae magnam et ipsum? Natus maxime mollitia quas nisi asperiores nihil, odit labore molestias amet minus deserunt recusandae fugit ducimus tenetur consequuntur enim eius, molestiae velit. Recusandae.</p>
+    <div class="job job-3">
+      <h3>Church Mutual Insurance Company</h3>
+      <h5>Associate Developer (June 2019 - Present)</h5>
+      <ul>
+        <li>Spring Framework</li>
+        <li>Vue JS, Vuetify, Vuex, and Vue-Router</li>
+        <li>Completed assigned units of work before scheduled releases</li>
+      </ul>
+    </div>
+
+    <div class="job job-1">
+      <h3>Clearwater Labs</h3>
+      <h5>Software Engineer (September 2018 - May 2019)</h5>
+      <ul>
+        <li>
+          Create software solution that improve campus life for students and
+          faculty
+        </li>
+        <li>Develop Parking Notifier API using React, Twillio, and MongoDB</li>
+        <li>
+          Work in a loosely based Agile methodology using GitHub, Slack,
+          Waffle, and Travis CI
+        </li>
+      </ul>
+    </div>
+
+    <div class="job job-2">
+      <h3>Travelers Insurance</h3>
+      <h5>
+        IT Intern, Business Insurance Infrastructure Architecture (June 2018
+        - August 2018)
+      </h5>
+      <ul>
+        <li>
+          Constructed and analyzed financial charts and graphs related to
+          Travelers IT department's spending
+        </li>
+        <li>
+          Explored new technologies that improved application scalability
+          and reduced cost
+        </li>
+        <li>
+          Planned and accomplished units of work using a Personal Kanban
+          approach
+        </li>
+        <li>Prepared presentation materials for senior leadership team members</li>
+      </ul>
+    </div>
+
+    <div class="job job-3">
+      <h3>Church Mutual Insurance Company</h3>
+      <h5>IT Intern, Java Developer (May 2017 - August 2017)</h5>
+      <ul>
+        <li>Worked in an Agile environment as an active member of a Scrum Team</li>
+        <li>
+          Developed a Spring Framework MVC application to streamline
+          business processes
+        </li>
+        <li>Coded application components using a test-driven approach</li>
+        <li>
+          Communicated and presented completed bodies of work during
+          bi-weekly sprint reviews
+        </li>
+        <li>Completed assigned units of work before scheduled releases</li>
+      </ul>
+    </div>
+
+    <div class="job job-4">
+      <h3>Ashley Furniture Industries, Inc.</h3>
+      <h5>
+        IT Intern, Distribution (May 2016 - August 2016, December 2016 -
+        January 2017)
+      </h5>
+      <ul>
+        <li>
+          Resolved database incidents that arose during the distribution
+          process
+        </li>
+        <li>
+          Performed new user setups and server promotes for the end-user
+          distribution application
+        </li>
+        <li>
+          Organized and submitted regular updates to the team's Sharepoint
+          resource site
+        </li>
+        <li>Discussed strategies with coworkers to improve team efficiency</li>
+      </ul>
+    </div>
   </div>
 </template>
 

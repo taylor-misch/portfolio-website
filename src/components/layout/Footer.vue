@@ -1,8 +1,10 @@
 <template>
-  <v-footer padless>
-    <v-flex primary lighten-2 py-4 text-center white--text xs12>
-      {{ new Date().getFullYear() }} —
-      <strong>Taylor Misch</strong>
+  <v-footer dark padless>
+    <v-flex lighten-2 py-4 text-center white--text xs12>
+      <strong>
+        &copy;
+        {{ new Date().getFullYear() }} —Taylor Misch. All Rights Reserverd
+      </strong>
     </v-flex>
   </v-footer>
 </template>
