@@ -3,13 +3,11 @@
     <NavBar />
     <v-content>
       <Home />
-      <v-container>
-        <About />
-        <Experience />
-        <Projects />
-        <Interests />
-        <Contact />
-      </v-container>
+      <About />
+      <Experience />
+      <Projects />
+      <Interests />
+      <Contact />
     </v-content>
     <Footer />
   </v-app>
