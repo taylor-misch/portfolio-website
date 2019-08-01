@@ -1,7 +1,6 @@
 <template>
-  <v-container>
-    <div id="contact">
-      <h1>Contact</h1>
+  <Module id="contact" title="Contact" class="red lighten-4">
+    <v-container>
       <div class="icons">
         <a href="https://linkedin.com/in/taylor-misch">
           <v-icon large color="black" class="fab fa-linkedin fa-2x">linkedin-box</v-icon>
@@ -13,12 +12,18 @@
           <v-icon large color="black">email</v-icon>
         </a>
       </div>
-    </div>
-  </v-container>
+    </v-container>
+  </Module>
 </template>
 
 <script>
-export default {};
+import Module from "@/components/layout/Module";
+export default {
+  name: "Contact",
+  components: {
+    Module
+  }
+};
 </script>
 
 <style scoped>

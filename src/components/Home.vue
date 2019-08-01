@@ -1,14 +1,20 @@
 <template>
-  <div id="home">
-    <div class="pimg1">
-      <div class="ptext"></div>
+  <Module id="home" title>
+    <div id="home">
+      <div class="pimg1">
+        <div class="ptext"></div>
+      </div>
     </div>
-  </div>
+  </Module>
 </template>
 
 <script>
+import Module from "@/components/layout/Module";
 export default {
-  name: "Home"
+  name: "Home",
+  components: {
+    Module
+  }
 };
 </script>
 
