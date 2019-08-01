@@ -1,18 +1,17 @@
 <template>
-  <v-container>
-    <div id="experience">
-      <h1>Experience</h1>
+  <Module id="experience" title="Experience" class="light-blue lighten-3">
+    <v-container>
       <v-expansion-panels>
         <v-expansion-panel v-for="experience in experiences" :key="experience.dates">
           <v-expansion-panel-header>
-            <v-layout style="width: 100%">
-              <v-flex xs4 class="text-left">
+            <v-layout>
+              <v-flex xs4 sm4 md4 class="text-left">
                 <strong>{{experience.title}}</strong>
               </v-flex>
-              <v-flex xs4 class="text-center text--secondary">
+              <v-flex xs4 sm4 md4 class="text-center text--secondary">
                 <i>{{experience.company}}</i>
               </v-flex>
-              <v-flex xs4 pr-3 class="text-right text--secondary">
+              <v-flex xs4 sm4 md4 pr-3 class="text-right text--secondary">
                 <i>{{experience.dates}}</i>
               </v-flex>
             </v-layout>
@@ -24,16 +23,30 @@
           </v-expansion-panel-content>
         </v-expansion-panel>
       </v-expansion-panels>
-    </div>
-  </v-container>
+    </v-container>
+  </Module>
 </template>
 
 <script>
+import Module from "@/components/layout/Module";
 export default {
   name: "Experience",
+  components: {
+    Module
+  },
   data() {
     return {
       experiences: [
+        {
+          company: "Church Mutual Insurance Company",
+          title: "Associate Developer",
+          dates: "(June 2019 - Present)",
+          outcomes: [
+            "Spring Framework",
+            "Vue JS, Vuetify, Vuex, and Vue-Router",
+            "Completed assigned units of work before scheduled releases"
+          ]
+        },
         {
           company: "University of Wisconsin - Eau Claire",
           title: "Bachelor of Science, Computer Science",
@@ -46,17 +59,6 @@ export default {
             "Advanced Business Communication Certificate"
           ]
         },
-        {
-          company: "Church Mutual Insurance Company",
-          title: "Associate Developer",
-          dates: "(June 2019 - Present)",
-          outcomes: [
-            "Spring Framework",
-            "Vue JS, Vuetify, Vuex, and Vue-Router",
-            "Completed assigned units of work before scheduled releases"
-          ]
-        },
-
         {
           company: "Clearwater Labs",
           title: "Software Engineer",

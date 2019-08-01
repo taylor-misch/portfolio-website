@@ -1,7 +1,6 @@
 <template>
-  <v-container>
-    <div id="interests">
-      <h1>Interests</h1>
+  <Module id="interests" title="Interests" class="purple lighten-5">
+    <v-container>
       <div class="interest">
         <h3>Hackathons</h3>
         <ul>
@@ -27,12 +26,18 @@
           <li>Guitar</li>
         </ul>
       </div>
-    </div>
-  </v-container>
+    </v-container>
+  </Module>
 </template>
 
 <script>
-export default {};
+import Module from "@/components/layout/Module";
+export default {
+  name: "Interests",
+  components: {
+    Module
+  }
+};
 </script>
 
 <style scoped>
