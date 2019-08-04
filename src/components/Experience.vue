@@ -1,29 +1,27 @@
 <template>
   <Module id="experience" title="Experience" class="light-blue lighten-3">
-    <v-container>
-      <v-expansion-panels>
-        <v-expansion-panel v-for="experience in experiences" :key="experience.dates">
-          <v-expansion-panel-header>
-            <v-layout>
-              <v-flex xs4 sm4 md4 class="text-left">
-                <strong>{{experience.title}}</strong>
-              </v-flex>
-              <v-flex xs4 sm4 md4 class="text-center text--secondary">
-                <i>{{experience.company}}</i>
-              </v-flex>
-              <v-flex xs4 sm4 md4 pr-3 class="text-right text--secondary">
-                <i>{{experience.dates}}</i>
-              </v-flex>
-            </v-layout>
-          </v-expansion-panel-header>
-          <v-expansion-panel-content>
-            <ul>
-              <li v-for="(outcome, index) in experience.outcomes" :key="index">{{outcome}}</li>
-            </ul>
-          </v-expansion-panel-content>
-        </v-expansion-panel>
-      </v-expansion-panels>
-    </v-container>
+    <v-expansion-panels>
+      <v-expansion-panel v-for="experience in experiences" :key="experience.dates">
+        <v-expansion-panel-header>
+          <v-layout>
+            <v-flex xs4 sm4 md4 class="text-left">
+              <strong>{{experience.title}}</strong>
+            </v-flex>
+            <v-flex xs4 sm4 md4 class="text-center text--secondary">
+              <i>{{experience.company}}</i>
+            </v-flex>
+            <v-flex xs4 sm4 md4 pr-3 class="text-right text--secondary">
+              <i>{{experience.dates}}</i>
+            </v-flex>
+          </v-layout>
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+          <ul>
+            <li v-for="(outcome, index) in experience.outcomes" :key="index">{{outcome}}</li>
+          </ul>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+    </v-expansion-panels>
   </Module>
 </template>
 
@@ -40,7 +38,7 @@ export default {
         {
           company: "Church Mutual Insurance Company",
           title: "Associate Developer",
-          dates: "(June 2019 - Present)",
+          dates: "June 2019 - Present",
           outcomes: [
             "Spring Framework",
             "Vue JS, Vuetify, Vuex, and Vue-Router",
@@ -50,7 +48,7 @@ export default {
         {
           company: "University of Wisconsin - Eau Claire",
           title: "Bachelor of Science, Computer Science",
-          dates: "(August 2015 - May 2019)",
+          dates: "August 2015 - May 2019",
           outcomes: [
             "Graduated Summa Cum Laude, 4.0 GPA",
             "Univerisity Honors Program",
@@ -62,7 +60,7 @@ export default {
         {
           company: "Clearwater Labs",
           title: "Software Engineer",
-          dates: "(September 2018 - May 2019)",
+          dates: "September 2018 - May 2019",
           outcomes: [
             "Create software solution that improve campus life for students and faculty",
             "Develop Parking Notifier API using React, Twillio, and MongoDB",
@@ -72,7 +70,7 @@ export default {
         {
           company: "Travelers Insurance",
           title: "IT Intern, Business Insurance Infrastructure Architecture",
-          dates: "(June - August 2018)",
+          dates: "June - August 2018",
           outcomes: [
             "Constructed and analyzed financial charts and graphs related to Travelers IT department's spending",
             " Explored new technologies that improved application scalability and reduced cost",
@@ -83,7 +81,7 @@ export default {
         {
           company: "Church Mutual Insurance Company",
           title: "IT Intern, Java Developer",
-          dates: "(May - August 2017)",
+          dates: "May - August 2017",
           outcomes: [
             "Worked in an Agile environment as an active member of a Scrum Team",
             "Developed a Spring Framework MVC application to streamline business processes",
@@ -94,7 +92,7 @@ export default {
         {
           company: "Ashley Furniture Industries, Inc.",
           title: "IT Intern, Distribution",
-          dates: "(May - August 2016) & (December 2016 - January 2017)",
+          dates: "May 2016 - January 2017",
           outcomes: [
             "Resolved database incidents that arose during the distribution process",
             "Performed new user setups and server promotes for the end-user distribution application",
