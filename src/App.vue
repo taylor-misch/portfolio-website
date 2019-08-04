@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <NavBar />
-    <v-content>
+    <v-content class="yellow lighten-4">
       <Home />
       <About />
       <Experience />
@@ -40,3 +40,7 @@ export default {
   })
 };
 </script>
+
+<style>
+</style>
+
