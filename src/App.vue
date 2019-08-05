@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <NavBar />
-    <v-content class="grey darken-4">
+    <v-content class="grey lighten-1">
       <Home />
       <About />
       <Experience />

@@ -1,16 +1,12 @@
 <template>
-  <Module id="contact" title="Contact" class="blue-grey lighten-3">
-    <div class="icons">
-      <a href="https://linkedin.com/in/taylor-misch">
-        <v-icon large color="black" class="fab fa-linkedin fa-2x">linkedin-box</v-icon>
-      </a>
-      <a href="https://github.com/taylor-misch">
-        <v-icon large color="black" class="fab fa-github">github-box</v-icon>
-      </a>
-      <a href="mailto:taylormisch@gmail.com">
-        <v-icon large color="black">email</v-icon>
-      </a>
-    </div>
+  <Module id="contact">
+    <v-layout justify-center>
+      <v-flex xs1 v-for="icon in icons" :key="icon.url">
+        <a :href="icon.url">
+          <v-icon large color="black" :class="icon.class">{{icon.text}}</v-icon>
+        </a>
+      </v-flex>
+    </v-layout>
   </Module>
 </template>
 
@@ -19,6 +15,27 @@ import Module from "@/components/layout/Module";
 export default {
   components: {
     Module
+  },
+  data() {
+    return {
+      icons: [
+        {
+          url: "https://linkedin.com/in/taylor-misch",
+          class: "fab fa-linkedin fa-2x",
+          text: "linkedin-box"
+        },
+        {
+          url: "https://github.com/taylor-misch",
+          class: "fab fa-github",
+          text: "github-box"
+        },
+        {
+          url: "mailto:taylormisch@gmail.com",
+          class: "",
+          text: "email"
+        }
+      ]
+    };
   }
 };
 </script>
