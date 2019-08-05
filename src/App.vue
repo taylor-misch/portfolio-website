@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <NavBar />
-    <v-content class="yellow lighten-4">
+    <v-content class="grey darken-4">
       <Home />
       <About />
       <Experience />
@@ -24,7 +24,6 @@ import Contact from "./components/Contact";
 import Footer from "./components/layout/Footer";
 
 export default {
-  name: "App",
   components: {
     Home,
     About,

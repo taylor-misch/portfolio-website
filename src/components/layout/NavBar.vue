@@ -13,7 +13,8 @@
       <v-btn text @click="$vuetify.goTo('#interests', options)">Interests</v-btn>
       <v-btn text @click="$vuetify.goTo('#contact', options)">Contact</v-btn>
     </v-toolbar-items>
-    <v-menu dark
+    <v-menu
+      dark
       v-model="value"
       :absolute="absolute"
       :open-on-hover="openOnHover"
@@ -23,7 +24,7 @@
       :offset-y="offsetY"
     >
       <template v-slot:activator="{ on }">
-        <v-app-bar-nav-icon v-on="on"></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon v-on="on" class="hidden-md-and-up"></v-app-bar-nav-icon>
       </template>
       <v-list>
         <v-list-item v-for="(item, index) in items" :key="index">

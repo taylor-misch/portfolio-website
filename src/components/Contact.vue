@@ -1,5 +1,5 @@
 <template>
-  <Module id="contact" title="Contact" class="red lighten-4">
+  <Module id="contact" title="Contact" class="blue-grey lighten-3">
     <div class="icons">
       <a href="https://linkedin.com/in/taylor-misch">
         <v-icon large color="black" class="fab fa-linkedin fa-2x">linkedin-box</v-icon>
@@ -17,7 +17,6 @@
 <script>
 import Module from "@/components/layout/Module";
 export default {
-  name: "Contact",
   components: {
     Module
   }

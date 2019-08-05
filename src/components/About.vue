@@ -1,16 +1,5 @@
 <template>
-  <Module id="about" title="About" class="orange lighten-3">
-    <v-layout>
-      <v-flex>
-        <!-- <v-carousel>
-            <v-carousel-item
-              v-for="(image, index) in images"
-              :key="index"
-              :src="require('@/assets/' + image)"
-            ></v-carousel-item>
-        </v-carousel>-->
-      </v-flex>
-    </v-layout>
+  <Module id="about" title="About" class="blue-grey lighten-3">
     <v-layout>
       <v-flex>
         <p>
@@ -25,13 +14,9 @@
 <script>
 import Module from "@/components/layout/Module";
 export default {
-  name: "About",
   components: {
     Module
   }
-  // data() {
-  //   images: ["cathedral_rock.jpg", "portrait_large.jpg"];
-  // }
 };
 </script>
 

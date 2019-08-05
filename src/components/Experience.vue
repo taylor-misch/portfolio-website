@@ -1,5 +1,5 @@
 <template>
-  <Module id="experience" title="Experience" class="light-blue lighten-3">
+  <Module id="experience" title="Experience" class="grey darken-3">
     <v-expansion-panels>
       <v-expansion-panel v-for="experience in experiences" :key="experience.dates">
         <v-expansion-panel-header>
@@ -28,7 +28,6 @@
 <script>
 import Module from "@/components/layout/Module";
 export default {
-  name: "Experience",
   components: {
     Module
   },

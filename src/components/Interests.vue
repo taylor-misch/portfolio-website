@@ -1,5 +1,5 @@
 <template>
-  <Module id="interests" title="Interests" class="purple lighten-5">
+  <Module id="interests" title="Interests" class="grey darken-3">
     <div class="interest">
       <h3>Hackathons</h3>
       <ul>
@@ -31,7 +31,6 @@
 <script>
 import Module from "@/components/layout/Module";
 export default {
-  name: "Interests",
   components: {
     Module
   }
@@ -39,4 +38,7 @@ export default {
 </script>
 
 <style scoped>
+.interest {
+  color: #fff;
+}
 </style>
