@@ -1,5 +1,5 @@
 <template>
-  <Module id="projects" title="Projects" class="orange">
+  <Module id="projects" title="Projects" class="blue-grey lighten-3">
     <v-layout>
       <v-flex xs6 md4 lg3 xl2 v-for="project in projects" :key="project.name">
         <v-card color="grey lighten-2" class="text-xs-center ma-3">
@@ -18,7 +18,7 @@
             <a :href="project.url">{{project.name}}</a>
           </v-card-text>
           <v-card-actions>
-            <v-layout justify-center>
+            <v-layout mb-1 justify-center>
               <a :href="project.github">
                 <v-icon large color="black" class="fab fa-github">github-box</v-icon>
               </a>
@@ -33,7 +33,6 @@
 <script>
 import Module from "@/components/layout/Module";
 export default {
-  name: "Projects",
   components: {
     Module
   },
