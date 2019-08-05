@@ -1,5 +1,5 @@
 <template>
-  <Module id="experience" title="Experience" class="grey darken-3">
+  <Module id="experience" title="Experience">
     <v-expansion-panels>
       <v-expansion-panel v-for="experience in experiences" :key="experience.dates">
         <v-expansion-panel-header>
