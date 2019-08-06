@@ -36,6 +36,22 @@ export default {
           id: 1,
           src: "cathedral_rock.jpg"
         }
+        // {
+        //   id: 2,
+        //   src: "eaa.jpg"
+        // },
+        // {
+        //   id: 3,
+        //   src: "ec_marathon.jpg"
+        // }
+        // {
+        //   id: 4,
+        //   src: "flatiron.JPG"
+        // },
+        // {
+        //   id: 5,
+        //   src: "tough_mudder.JPG"
+        // }
       ]
     };
   }
