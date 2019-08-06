@@ -2,7 +2,7 @@
   <Module id="projects" title="Projects">
     <v-layout>
       <v-flex xs6 md4 lg3 xl2 v-for="project in projects" :key="project.name">
-        <v-card color="grey darken-2" class="text-xs-center ma-3">
+        <v-card color="grey darken-1" class="text-xs-center ma-3">
           <v-responsive>
             <a :href="project.url">
               <v-img :src="require('@/assets/projects/'+project.logo)" aspect-ratio="1"></v-img>

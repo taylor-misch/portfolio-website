@@ -1,33 +1,32 @@
 <template>
   <div id="home">
     <div class="pimg1">
-      <div class="ptext"></div>
+      <v-container fill-height>
+        <v-layout column fill-height align-center justify-center>
+          <v-flex xs1 class="display-4 text-center font-weight-medium white--text">Taylor Misch</v-flex>
+          <v-flex
+            xs1
+            class="display-1 text-center font-weight-medium white--text"
+          >Full Stack Developer</v-flex>
+        </v-layout>
+      </v-container>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: "Home",
-  components: {}
-};
+<script >
+export default {};
 </script>
 
 <style scoped>
-#home {
-  background-color: black;
-}
 .pimg1 {
   position: relative;
-  opacity: 0.3;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-.pimg1 {
-  background-image: url("../assets/background.jpg");
-  min-height: 1000px;
+  background-image: url("../assets/background2.jpg");
+  height: 100vh;
 }
 </style>
 
