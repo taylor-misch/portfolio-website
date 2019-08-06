@@ -1,6 +1,6 @@
 <template>
   <Module id="projects" title="Projects">
-    <v-layout>
+    <v-layout wrap>
       <v-flex xs6 md4 lg3 xl2 v-for="project in projects" :key="project.name">
         <v-card color="grey darken-1" class="text-xs-center ma-3">
           <v-responsive>
@@ -9,9 +9,7 @@
             </a>
           </v-responsive>
 
-          <v-card-text
-            class="text-center white--text font-weight-regular headline hidden-lg-and-up"
-          >
+          <v-card-text class="text-center white--text font-weight-medium title hidden-sm-and-up">
             <a :href="project.url">{{project.name}}</a>
           </v-card-text>
           <v-card-text

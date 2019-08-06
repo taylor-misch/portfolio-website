@@ -11,7 +11,6 @@
       <v-btn text @click="$vuetify.goTo('#experience', options)">Experience</v-btn>
       <v-btn text @click="$vuetify.goTo('#projects', options)">Projects</v-btn>
       <v-btn text @click="$vuetify.goTo('#interests', options)">Interests</v-btn>
-      <v-btn text @click="$vuetify.goTo('#contact', options)">Contact</v-btn>
     </v-toolbar-items>
     <v-menu
       dark
@@ -44,8 +43,7 @@ export default {
       { title: "About", id: "#about" },
       { title: "Experience", id: "#experience" },
       { title: "Projects", id: "#projects" },
-      { title: "Interests", id: "#interests" },
-      { title: "Contacts", id: "#contacts" }
+      { title: "Interests", id: "#interests" }
     ],
     absolute: false,
     openOnHover: false,
