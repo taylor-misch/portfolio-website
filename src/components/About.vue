@@ -1,16 +1,20 @@
 <template>
-  <Module id="about" title="About">
-    <v-layout xs12 md6>
-      <v-flex class="headline text-left">
+  <Module id="about" title="About" class="blue lighten-4">
+    <v-layout md6>
+      <v-flex class="title text-left">
         <p>Hi, I'm Taylor Misch. This site has been a bit of a passion project of mine for a long time now. As a software developer I've always though it is a rite of passage to create your own website - so here's mine.</p>
-        <p>On this site I post projects that I've worked on (inside and outside the realm of software development), things I'm interested in, and pictures from my latest adventure - whatever that may be.</p>
-        <p>Feel free to look around or reach out to me if you think I can help you in anyway or just would like to talk about something you see here.</p>
+        <p>On this site I post projects that I've worked on (inside and outside the realm of software development), things I'm interested in, and pictures from my latest adventure - whatever that may be.Feel free to look around or reach out to me if you think I can help you in anyway or just would like to talk about something you see here.</p>
       </v-flex>
     </v-layout>
-    <v-layout>
-      <v-flex xs12 md6>
+    <v-layout md6 justify-center>
+      <v-flex class="xs12 md6">
         <v-responsive aspect-ratio="16/9">
-          <v-carousel>
+          <v-carousel
+            :height="{'300': $vuetify.breakpoint.smAndDown}"
+            hide-delimiters
+            cycle
+            interval="7000"
+          >
             <v-carousel-item
               v-for="image in images"
               :key="image.id"
@@ -35,22 +39,22 @@ export default {
         {
           id: 1,
           src: "cathedral_rock.jpg"
+        },
+        {
+          id: 2,
+          src: "eaa.jpg"
         }
-        // {
-        //   id: 2,
-        //   src: "eaa.jpg"
-        // },
         // {
         //   id: 3,
         //   src: "ec_marathon.jpg"
-        // }
+        // },
         // {
         //   id: 4,
-        //   src: "flatiron.JPG"
+        //   src: "flatiron.jpg"
         // },
         // {
         //   id: 5,
-        //   src: "tough_mudder.JPG"
+        //   src: "tough_mudder.jpg"
         // }
       ]
     };
@@ -59,4 +63,7 @@ export default {
 </script>
 
 <style scoped>
+.v-carousel-item {
+  height: 100% !important;
+}
 </style>

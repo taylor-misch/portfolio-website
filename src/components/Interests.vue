@@ -1,5 +1,5 @@
 <template>
-  <Module id="interests" title="Interests">
+  <Module id="interests" title="Interests" class="blue lighten-4">
     <div class="interest">
       <h3>Hackathons</h3>
       <ul>
