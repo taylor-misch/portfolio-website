@@ -1,5 +1,5 @@
 <template>
-  <Module id="contact">
+  <Module id="contact" class="amber lighten-4">
     <v-layout justify-center>
       <v-flex xs1 v-for="icon in icons" :key="icon.url">
         <a :href="icon.url">

@@ -1,19 +1,19 @@
 <template>
-  <Module id="projects" title="Projects">
+  <Module id="projects" title="Projects" class="red lighten-4">
     <v-layout wrap>
       <v-flex xs6 md4 lg3 xl2 v-for="project in projects" :key="project.name">
-        <v-card color="grey darken-1" class="text-xs-center ma-3">
+        <v-card color="grey lighten-1" class="text-xs-center ma-3">
           <v-responsive>
             <a :href="project.url">
               <v-img :src="require('@/assets/projects/'+project.logo)" aspect-ratio="1"></v-img>
             </a>
           </v-responsive>
 
-          <v-card-text class="text-center white--text font-weight-medium title hidden-sm-and-up">
+          <v-card-text class="text-center black--text font-weight-medium title hidden-sm-and-up">
             <a :href="project.url">{{project.name}}</a>
           </v-card-text>
           <v-card-text
-            class="text-center white--text font-weight-regular display-1 hidden-md-and-down"
+            class="text-center black--text font-weight-medium headline hidden-md-and-down"
           >
             <a :href="project.url">{{project.name}}</a>
           </v-card-text>

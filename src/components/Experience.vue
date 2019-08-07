@@ -1,23 +1,42 @@
 <template>
-  <Module id="experience" title="Experience">
+  <Module id="experience" title="Experience" class="amber lighten-4">
     <v-expansion-panels>
-      <v-expansion-panel v-for="experience in experiences" :key="experience.dates">
+      <v-expansion-panel
+        class="grey lighten-5"
+        v-for="experience in experiences"
+        :key="experience.dates"
+      >
         <v-expansion-panel-header>
           <v-layout>
-            <v-flex xs4 sm4 md4 class="text-left">
+            <v-flex class="xs4 body-1 text-left hidden-sm-and-down">
               <strong>{{experience.title}}</strong>
             </v-flex>
-            <v-flex xs4 sm4 md4 class="text-center text--secondary">
+            <v-flex class="xs4 body-1 text-center text--secondary hidden-sm-and-down">
               <i>{{experience.company}}</i>
             </v-flex>
-            <v-flex xs4 sm4 md4 pr-3 class="text-right text--secondary">
+            <v-flex pr-3 class="xs4 body-1 text-right text--secondary hidden-sm-and-down">
               <i>{{experience.dates}}</i>
+            </v-flex>
+            <v-flex class="xs5 body-2 text-left hidden-md-and-up">
+              <strong>{{experience.title}}</strong>
+            </v-flex>
+            <v-flex pr-3 class="xs7 body-2 text-right text--secondary hidden-md-and-up">
+              <i>{{experience.company}} ({{experience.dates}})</i>
             </v-flex>
           </v-layout>
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <ul>
-            <li v-for="(outcome, index) in experience.outcomes" :key="index">{{outcome}}</li>
+            <li
+              class="body-1 hidden-sm-and-down"
+              v-for="(outcome, index) in experience.outcomes"
+              :key="index"
+            >{{outcome}}</li>
+            <li
+              class="body-2 hidden-md-and-up"
+              v-for="(outcome, index) in experience.outcomes"
+              :key="index"
+            >{{outcome}}</li>
           </ul>
         </v-expansion-panel-content>
       </v-expansion-panel>
