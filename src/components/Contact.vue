@@ -1,12 +1,14 @@
 <template>
-  <Module id="contact" class="amber lighten-4">
-    <v-layout justify-center>
-      <v-flex xs1 v-for="icon in icons" :key="icon.url">
-        <a :href="icon.url">
-          <v-icon large color="black" :class="icon.class">{{icon.text}}</v-icon>
-        </a>
-      </v-flex>
-    </v-layout>
+  <Module id="contact">
+    <v-container fluid>
+      <v-layout justify-center>
+        <v-flex md1 xs2 v-for="icon in icons" :key="icon.url">
+          <a :href="icon.url">
+            <v-icon large :color="icon.color" :class="icon.class">{{icon.text}}</v-icon>
+          </a>
+        </v-flex>
+      </v-layout>
+    </v-container>
   </Module>
 </template>
 
@@ -22,17 +24,20 @@ export default {
         {
           url: "https://linkedin.com/in/taylor-misch",
           class: "fab fa-linkedin fa-2x",
-          text: "linkedin-box"
+          text: "linkedin-box",
+          color: "blue lighten-1"
         },
         {
           url: "https://github.com/taylor-misch",
           class: "fab fa-github",
-          text: "github-box"
+          text: "github-box",
+          color: "amber lighten-1"
         },
         {
           url: "mailto:taylormisch@gmail.com",
           class: "",
-          text: "email"
+          text: "email",
+          color: "red lighten-1"
         }
       ]
     };
