@@ -7,10 +7,10 @@
       </v-flex>
     </v-layout>
     <v-layout md6 justify-center>
-      <v-flex class="xs12 md6">
+      <v-flex grow-shrink-0 class="xs12 md6">
         <v-responsive aspect-ratio="16/9">
           <v-carousel
-            :height="{'300': $vuetify.breakpoint.smAndDown}"
+            :height="{'300': $vuetify.breakpoint.mdAndDown}"
             hide-delimiters
             cycle
             interval="7000"
