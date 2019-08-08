@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app dark>
+  <v-app-bar app dark color="blue darken-4">
     <v-toolbar-title class="headline text-uppercase">
       <span>Taylor Misch</span>
     </v-toolbar-title>

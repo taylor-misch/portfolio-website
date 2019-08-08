@@ -1,8 +1,8 @@
 <template>
-  <Module id="experience" title="Experience" class="amber lighten-4">
+  <Module id="experience" title="Experience">
     <v-expansion-panels>
       <v-expansion-panel
-        class="grey lighten-5"
+        class="amber lighten-4"
         v-for="experience in experiences"
         :key="experience.dates"
       >
@@ -11,17 +11,19 @@
             <v-flex class="xs4 body-1 text-left hidden-sm-and-down">
               <strong>{{experience.title}}</strong>
             </v-flex>
-            <v-flex class="xs4 body-1 text-center text--secondary hidden-sm-and-down">
-              <i>{{experience.company}}</i>
-            </v-flex>
-            <v-flex pr-3 class="xs4 body-1 text-right text--secondary hidden-sm-and-down">
+            <v-flex class="xs4 body-1 text-center hidden-sm-and-down">
               <i>{{experience.dates}}</i>
+            </v-flex>
+            <v-flex class="pr-3 xs4 body-1 text-right hidden-sm-and-down">
+              <strong>{{experience.company}}</strong>
             </v-flex>
             <v-flex class="xs5 body-2 text-left hidden-md-and-up">
               <strong>{{experience.title}}</strong>
             </v-flex>
-            <v-flex pr-3 class="xs7 body-2 text-right text--secondary hidden-md-and-up">
-              <i>{{experience.company}} ({{experience.dates}})</i>
+            <v-flex pr-3 class="xs7 body-2 text-center hidden-md-and-up">
+              <strong>{{experience.company}}</strong>
+              <br />
+              <i>({{experience.dates}})</i>
             </v-flex>
           </v-layout>
         </v-expansion-panel-header>

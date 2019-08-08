@@ -1,13 +1,12 @@
 <template>
   <v-app>
     <NavBar />
-    <v-content class="grey lighten-2">
+    <v-content class="blue lighten-4">
       <Home />
       <About />
       <Experience />
       <Projects />
       <Interests />
-      <Contact />
     </v-content>
     <Footer />
   </v-app>
@@ -20,7 +19,6 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Interests from "./components/Interests";
-import Contact from "./components/Contact";
 import Footer from "./components/layout/Footer";
 
 export default {
@@ -31,7 +29,6 @@ export default {
     Projects,
     Interests,
     NavBar,
-    Contact,
     Footer
   },
   data: () => ({

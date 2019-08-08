@@ -3,9 +3,18 @@
     <div class="pimg1">
       <v-container fill-height>
         <v-layout column fill-height align-center justify-center>
-          <v-flex pb-6 xs1 class="display-4 text-center font-weight-medium white--text">Taylor Misch</v-flex>
-          <v-divider></v-divider>
           <v-flex xs1 class="display-1 text-center font-weight-medium">
+            <div class="display-4 text-center font-weight-medium mb4 white--text">Taylor Misch</div>
+            <a href="https://linkedin.com/in/taylor-misch">
+              <v-icon x-large color="blue lighten-2" class="mx-3 fab fa-linkedin fa-2x">linkedin-box</v-icon>
+            </a>
+            <a href="https://github.com/taylor-misch">
+              <v-icon x-large color="amber lighten-2" class="mx-3 fab fa-github">github-boxb</v-icon>
+            </a>
+            <a href="mailto:taylormisch@gmail.com">
+              <v-icon x-large color="red lighten-2" class="ma-3">email</v-icon>
+            </a>
+            <br />
             <span class="blue--text text--lighten-3">Full Stack Developer</span>
             <br />
             <span class="amber--text text--lighten-3">Hobbiest Musician</span>
@@ -19,7 +28,32 @@
 </template>
 
 <script >
-export default {};
+export default {
+  data() {
+    return {
+      icons: [
+        {
+          url: "https://linkedin.com/in/taylor-misch",
+          class: "fab fa-linkedin fa-2x",
+          text: "linkedin-box",
+          color: "blue lighten-1"
+        },
+        {
+          url: "https://github.com/taylor-misch",
+          class: "fab fa-github",
+          text: "github-box",
+          color: "amber lighten-1"
+        },
+        {
+          url: "mailto:taylormisch@gmail.com",
+          class: "",
+          text: "email",
+          color: "red lighten-1"
+        }
+      ]
+    };
+  }
+};
 </script>
 
 <style scoped>
@@ -31,6 +65,9 @@ export default {};
   background-attachment: fixed;
   background-image: url("../assets/background2.jpg");
   height: 100vh;
+}
+a {
+  text-decoration: none;
 }
 </style>
 

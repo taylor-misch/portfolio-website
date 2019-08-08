@@ -1,5 +1,5 @@
 <template>
-  <Module id="about" title="About" class="blue lighten-4">
+  <Module id="about" title="About">
     <v-layout md6>
       <v-flex class="title text-left">
         <p>Hi, I'm Taylor Misch. This site has been a bit of a passion project of mine for a long time now. As a software developer I've always thought it is a rite of passage to create your own website - so here's mine.</p>
