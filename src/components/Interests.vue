@@ -13,7 +13,7 @@
               <v-carousel-item
                 v-for="(image, index) in interest.images"
                 :key="index"
-                :src="require('@/assets/carousel/'+image)"
+                :src="require('@/assets/interests/'+image)"
               ></v-carousel-item>
             </v-carousel>
           </v-responsive>
@@ -67,22 +67,22 @@ export default {
         {
           name: "Software Development",
           body: "This is what I love about software Development",
-          images: ["eaa.jpg", "ec_marathon.jpg", "tough_mudder.jpg"]
+          images: ["flatiron.jpg", "ec_marathon.jpg", "tough_mudder.jpg"]
         },
         {
           name: "Music",
           body: "This is what I love about music",
-          images: ["eaa.jpg", "ec_marathon.jpg", "tough_mudder.jpg"]
+          images: ["flatiron.jpg", "ec_marathon.jpg", "tough_mudder.jpg"]
         },
         {
           name: "Reading",
           body: "This is what I love about reading",
-          images: ["eaa.jpg", "ec_marathon.jpg", "tough_mudder.jpg"]
+          images: ["flatiron.jpg", "ec_marathon.jpg", "tough_mudder.jpg"]
         },
         {
           name: "Building Stuff",
           body: "This is what I love about building stuff",
-          images: ["eaa.jpg", "ec_marathon.jpg", "tough_mudder.jpg"]
+          images: ["flatiron.jpg", "ec_marathon.jpg", "tough_mudder.jpg"]
         }
       ]
     };
