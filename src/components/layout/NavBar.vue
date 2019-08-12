@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app dark color="blue darken-4">
+  <v-app-bar app dark :color="menuColor">
     <v-toolbar-title class="headline text-uppercase">
       <span>Taylor Misch</span>
     </v-toolbar-title>
@@ -25,7 +25,7 @@
       <template v-slot:activator="{ on }">
         <v-app-bar-nav-icon v-on="on" class="hidden-md-and-up"></v-app-bar-nav-icon>
       </template>
-      <v-list>
+      <v-list :color="menuColor">
         <v-list-item v-for="(item, index) in items" :key="index">
           <v-list-item-title @click="$vuetify.goTo(item.id, options)">{{ item.title }}</v-list-item-title>
         </v-list-item>
@@ -51,7 +51,8 @@ export default {
     closeOnClick: true,
     closeOnContentClick: true,
     offsetX: false,
-    offsetY: true
+    offsetY: true,
+    menuColor: "blue darken-4"
   }),
   computed: {
     options() {
