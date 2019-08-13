@@ -46,18 +46,6 @@ export default {
           id: 2,
           src: "eaa1.jpg"
         }
-        // {
-        //   id: 3,
-        //   src: "ec_marathon.jpg"
-        // },
-        // {
-        //   id: 4,
-        //   src: "flatiron.jpg"
-        // },
-        // {
-        //   id: 5,
-        //   src: "tough_mudder.jpg"
-        // }
       ]
     };
   }

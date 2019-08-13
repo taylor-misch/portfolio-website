@@ -20,7 +20,7 @@
           <v-card-actions>
             <v-layout mb-1 justify-center>
               <a :href="project.github">
-                <v-icon large color="black" class="fab fa-github">github-box</v-icon>
+                <v-icon x-large color="black" class="fab fa-github"></v-icon>
               </a>
             </v-layout>
           </v-card-actions>

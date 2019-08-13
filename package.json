@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "simple-parallax-js": "^5.1.0",
     "vue": "^2.6.10",
     "vuetify": "^2.0.0"
   },
