@@ -63,7 +63,7 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url("../assets/background.jpg");
+  background-image: url("../assets/background1.jpg");
   height: 100vh;
 }
 a {

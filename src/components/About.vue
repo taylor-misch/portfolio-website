@@ -40,11 +40,11 @@ export default {
       images: [
         {
           id: 1,
-          src: "cathedral_rock.jpg"
+          src: "cathedral_rock1.jpg"
         },
         {
           id: 2,
-          src: "eaa.jpg"
+          src: "eaa1.jpg"
         }
         // {
         //   id: 3,

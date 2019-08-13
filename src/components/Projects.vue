@@ -41,13 +41,13 @@ export default {
       projects: [
         {
           name: "Bytepocket",
-          logo: "bytepocket.jpg",
+          logo: "bytepocket1.jpg",
           url: "https://taylor-misch.github.io/bytepocket/",
           github: "https://github.com/taylor-misch/bytepocket"
         },
         {
           name: "SoundScript",
-          logo: "soundscript.png",
+          logo: "soundscript1.png",
           url: "https://taylor-misch.github.io/soundscript/",
           github: "https://github.com/taylor-misch/soundscript"
         }
