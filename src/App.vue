@@ -31,9 +31,10 @@ export default {
     NavBar,
     Footer
   },
-  data: () => ({
-    //
-  })
+  metaInfo: {
+    title: "Taylor Misch",
+    titleTemplate: "%s | Portfolio"
+  }
 };
 </script>
 
