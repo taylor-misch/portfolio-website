@@ -9,10 +9,10 @@
               <v-icon x-large color="blue lighten-2" class="mx-3 fab fa-linkedin"></v-icon>
             </a>
             <a href="https://github.com/taylor-misch">
-              <v-icon x-large color="amber lighten-2" class="mx-3 fab fa-github"></v-icon>
+              <v-icon x-large color="amber lighten-3" class="mx-3 fab fa-github"></v-icon>
             </a>
             <a href="mailto:taylormisch@gmail.com">
-              <v-icon x-large color="red lighten-2" class="ma-3 fas fa-envelope"></v-icon>
+              <v-icon x-large color="red lighten-3" class="ma-3 fas fa-envelope"></v-icon>
             </a>
             <br />
             <span class="blue--text text--lighten-3">Full Stack Developer</span>

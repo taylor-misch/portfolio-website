@@ -2,7 +2,7 @@
   <Module id="experience" title="Experience">
     <v-expansion-panels>
       <v-expansion-panel
-        class="amber lighten-4"
+        class="amber lighten-5"
         v-for="experience in experiences"
         :key="experience.dates"
       >

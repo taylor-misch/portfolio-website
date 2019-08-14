@@ -45,6 +45,10 @@ export default {
         {
           id: 2,
           src: "eaa1.jpg"
+        },
+        {
+          id: 3,
+          src: "tough_mudder1.jpg"
         }
       ]
     };

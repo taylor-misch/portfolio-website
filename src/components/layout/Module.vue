@@ -2,7 +2,12 @@
   <v-container fluid grid-list-lg>
     <v-layout justify-center>
       <v-flex xs12 sm10>
-        <div class="display-2 red--text text--darken-1 font-weight-medium text-uppercase">{{title}}</div>
+        <div
+          class="display-2 red--text text--lighten-1 font-weight-medium text-uppercase hidden-sm-and-down"
+        >{{title}}</div>
+        <div
+          class="display-2 red--text text--lighten-1 font-weight-medium text-uppercase text-center hidden-md-and-up"
+        >{{title}}</div>
       </v-flex>
     </v-layout>
     <v-layout align-center justify-center>

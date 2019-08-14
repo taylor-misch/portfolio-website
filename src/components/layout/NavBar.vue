@@ -1,11 +1,12 @@
 <template>
   <v-app-bar app dark :color="menuColor">
-    <v-toolbar-title class="headline text-uppercase">
-      <span>Taylor Misch</span>
-    </v-toolbar-title>
+    <v-avatar tile size="40">
+      <v-img :src="require('@/assets/logo.png')"></v-img>
+    </v-avatar>
+    <v-toolbar-title class="headline ml-3 text-uppercase hidden-sm-and-down">Taylor Misch</v-toolbar-title>
     <v-spacer></v-spacer>
 
-    <v-toolbar-items class="hidden-sm-and-down">
+    <v-toolbar-items class="hidden-xs-only">
       <v-btn text @click="$vuetify.goTo('#home', options)">Home</v-btn>
       <v-btn text @click="$vuetify.goTo('#about', options)">About</v-btn>
       <v-btn text @click="$vuetify.goTo('#experience', options)">Experience</v-btn>
@@ -23,7 +24,7 @@
       :offset-y="offsetY"
     >
       <template v-slot:activator="{ on }">
-        <v-app-bar-nav-icon v-on="on" class="hidden-md-and-up"></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon x-large v-on="on" class="hidden-sm-and-up"></v-app-bar-nav-icon>
       </template>
       <v-list :color="menuColor">
         <v-list-item v-for="(item, index) in items" :key="index">
