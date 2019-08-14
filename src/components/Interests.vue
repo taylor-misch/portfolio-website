@@ -2,7 +2,7 @@
   <Module id="interests" title="Interests">
     <v-layout wrap>
       <v-flex xs12 md6 v-for="interest in interests" :key="interest.name">
-        <v-card color="amber lighten-5" class="text-xs-center ma-3">
+        <v-card color="amber lighten-4" class="text-xs-center ma-3">
           <v-card-text class="text-center">
             <v-icon x-large color="black">{{interest.icon}}</v-icon>
           </v-card-text>
@@ -16,31 +16,6 @@
         </v-card>
       </v-flex>
     </v-layout>
-    <!-- <div class="interest">
-      <h3>Hackathons</h3>
-      <ul>
-        <li>MadHacks 2017 & 2018</li>
-        <li>MinneHacks 2018 & 2019</li>
-        <li>HuskieHacks 2017</li>
-      </ul>
-    </div>
-
-    <div class="interest">
-      <h3>Software Development</h3>
-      <ul>
-        <li>Vue.js</li>
-        <li>React.js</li>
-        <li>Unity Game Developement</li>
-      </ul>
-    </div>
-
-    <div class="interest">
-      <h3>Music</h3>
-      <ul>
-        <li>Piano</li>
-        <li>Guitar</li>
-      </ul>
-    </div>-->
   </Module>
 </template>
 

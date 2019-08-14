@@ -1,5 +1,5 @@
 <template>
-  <v-footer dark padless color="blue darken-4">
+  <v-footer dark padless color="grey darken-3">
     <v-flex
       py-4
       text-center

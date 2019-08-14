@@ -2,9 +2,9 @@
   <Module id="experience" title="Experience">
     <v-expansion-panels>
       <v-expansion-panel
-        class="amber lighten-5"
+        class="amber lighten-4"
         v-for="experience in experiences"
-        :key="experience.dates"
+        :key="experience.id"
       >
         <v-expansion-panel-header>
           <v-layout>
@@ -56,16 +56,17 @@ export default {
     return {
       experiences: [
         {
+          id: 1,
           company: "Church Mutual Insurance Company",
           title: "Associate Developer",
           dates: "June 2019 - Present",
           outcomes: [
-            "Spring Framework",
-            "Vue JS, Vuetify, Vuex, and Vue-Router",
-            "Completed assigned units of work before scheduled releases"
+            "Develop proof of concept applications using the Spring and Vue.js frameworks",
+            "Explore frontend solutions with Vuetify, Vuex, and Vue-Router"
           ]
         },
         {
+          id: 2,
           company: "University of Wisconsin - Eau Claire",
           title: "Bachelor of Science, Computer Science",
           dates: "August 2015 - May 2019",
@@ -78,38 +79,43 @@ export default {
           ]
         },
         {
+          id: 3,
           company: "Clearwater Labs",
           title: "Software Engineer",
           dates: "September 2018 - May 2019",
           outcomes: [
-            "Create software solution that improve campus life for students and faculty",
-            "Develop Parking Notifier API using React, Twillio, and MongoDB",
-            "Work in a loosely based Agile methodology using GitHub, Slack,Waffle, and Travis CI"
+            "Designed and developed a texting service software for the University of Wisconin - Eau Claire's fundraising foundation",
+            "Developed Parking Notifier API using React, Twillio, and MongoDB",
+            "Worked in a loosely based Agile methodology using GitHub, Slack, Waffle, and Travis CI",
+            "Created software solutions that improved campus life for students and faculty"
           ]
         },
         {
+          id: 4,
           company: "Travelers Insurance",
           title: "IT Intern, Business Insurance Infrastructure Architecture",
           dates: "June - August 2018",
           outcomes: [
             "Constructed and analyzed financial charts and graphs related to Travelers IT department's spending",
-            " Explored new technologies that improved application scalability and reduced cost",
-            "Planned and accomplished units of work using a Personal Kanban approach",
-            "Prepared presentation materials for senior leadership team members"
+            "Explored new technologies that improved application scalability and reduced cost",
+            "Competed in and won a summer long company wide (interns) innovation jam creating and pitching an idea for an internal onboarding app",
+            "Planned and accomplished units of work using a Personal Kanban approach"
           ]
         },
         {
+          id: 5,
           company: "Church Mutual Insurance Company",
           title: "IT Intern, Java Developer",
           dates: "May - August 2017",
           outcomes: [
+            "Developed a Spring Framework MVC application to streamline internal business processes",
             "Worked in an Agile environment as an active member of a Scrum Team",
-            "Developed a Spring Framework MVC application to streamline business processes",
-            "Completed assigned units of work before scheduled releases",
+            "Delivered an end-of-summer results presentation to senior leadership IT staff",
             "Communicated and presented completed bodies of work during bi-weekly sprint reviews"
           ]
         },
         {
+          id: 6,
           company: "Ashley Furniture Industries, Inc.",
           title: "IT Intern, Distribution",
           dates: "May 2016 - January 2017",
@@ -126,4 +132,7 @@ export default {
 </script>
 
 <style scoped>
+.experience-color {
+  background-color: #000f08;
+}
 </style>

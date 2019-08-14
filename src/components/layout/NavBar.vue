@@ -53,7 +53,7 @@ export default {
     closeOnContentClick: true,
     offsetX: false,
     offsetY: true,
-    menuColor: "blue darken-4"
+    menuColor: "grey darken-3"
   }),
   computed: {
     options() {

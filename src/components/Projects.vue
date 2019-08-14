@@ -2,7 +2,7 @@
   <Module id="projects" title="Projects">
     <v-layout wrap>
       <v-flex xs6 md4 lg3 xl2 v-for="project in projects" :key="project.name">
-        <v-card color="amber lighten-5" class="text-xs-center ma-3">
+        <v-card color="amber lighten-4" class="text-xs-center ma-3">
           <v-responsive>
             <v-tooltip top color="black">
               <template v-slot:activator="{ on }">
