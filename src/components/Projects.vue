@@ -5,7 +5,11 @@
         <v-card color="amber lighten-5" class="text-xs-center ma-3">
           <v-responsive>
             <a :href="project.url">
-              <v-img :src="require('@/assets/projects/'+project.logo)" aspect-ratio="1"></v-img>
+              <v-img
+                :src="require('@/assets/projects/'+project.logo)"
+                aspect-ratio="1"
+                :alt="project.alt"
+              ></v-img>
             </a>
           </v-responsive>
 
@@ -43,13 +47,15 @@ export default {
           name: "Bytepocket",
           logo: "bytepocket.jpg",
           url: "https://taylor-misch.github.io/bytepocket/",
-          github: "https://github.com/taylor-misch/bytepocket"
+          github: "https://github.com/taylor-misch/bytepocket",
+          alt: "Bytepocket - cryptocurrency wallet tracker"
         },
         {
           name: "SoundScript",
           logo: "soundscript.png",
           url: "https://taylor-misch.github.io/soundscript/",
-          github: "https://github.com/taylor-misch/soundscript"
+          github: "https://github.com/taylor-misch/soundscript",
+          alt: "SoundScript - a coding language for music"
         }
       ]
     };
