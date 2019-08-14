@@ -40,15 +40,27 @@ export default {
       images: [
         {
           id: 1,
-          src: "cathedral_rock1.jpg"
+          src: "cathedral_rock.jpg"
         },
         {
           id: 2,
-          src: "eaa1.jpg"
+          src: "eaa.jpg"
         },
         {
           id: 3,
-          src: "tough_mudder1.jpg"
+          src: "tough_mudder.jpg"
+        },
+        {
+          id: 4,
+          src: "flatiron.jpg"
+        },
+        {
+          id: 5,
+          src: "sutherland.jpg"
+        },
+        {
+          id: 6,
+          src: "taylors_falls.jpg"
         }
       ]
     };
