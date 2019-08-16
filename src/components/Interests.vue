@@ -2,16 +2,13 @@
   <Module id="interests" title="Interests">
     <v-layout wrap>
       <v-flex xs12 md6 v-for="interest in interests" :key="interest.name">
-        <v-card color="amber lighten-4" class="text-xs-center ma-3">
+        <v-card color="grey lighten-4" class="text-xs-center ma-3">
           <v-card-text class="text-center">
             <v-icon x-large color="black">{{interest.icon}}</v-icon>
           </v-card-text>
-          <v-card-text
-            class="text-center black--text font-weight-medium title hidden-md-and-up"
-          >{{interest.name}}</v-card-text>
-          <v-card-text
-            class="text-center black--text font-weight-medium headline hidden-sm-and-down"
-          >{{interest.name}}</v-card-text>
+          <v-card-text class="text-center black--text font-weight-medium body-1">
+            <h3>{{interest.name}}</h3>
+          </v-card-text>
           <v-card-text class="text-justify black--text font-weight-medium body-1">{{interest.body}}</v-card-text>
         </v-card>
       </v-flex>

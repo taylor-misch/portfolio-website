@@ -3,8 +3,8 @@
     <div class="pimg1">
       <v-container fill-height>
         <v-layout column fill-height align-center justify-center>
-          <v-flex xs1 class="display-1 text-center font-weight-medium">
-            <div class="display-4 text-center font-weight-medium mb4 white--text">Taylor Misch</div>
+          <v-flex xs1 class="display-4 text-center font-weight-medium">
+            <div class="new-font text-center font-weight-medium mb4 white--text">Taylor Misch</div>
             <v-tooltip left>
               <template v-slot:activator="{ on }">
                 <a href="https://linkedin.com/in/taylor-misch">
@@ -16,7 +16,7 @@
             <v-tooltip top>
               <template v-slot:activator="{ on }">
                 <a href="https://github.com/taylor-misch">
-                  <v-icon x-large color="amber lighten-3" v-on="on" class="mx-3 fab fa-github"></v-icon>
+                  <v-icon x-large color="amber lighten-4" v-on="on" class="mx-3 fab fa-github"></v-icon>
                 </a>
               </template>
               <span>GitHub</span>
@@ -29,12 +29,13 @@
               </template>
               <span>Email</span>
             </v-tooltip>
-            <br />
-            <span class="blue--text text--lighten-3">Full Stack Developer</span>
-            <br />
-            <span class="amber--text text--lighten-3">Hobbiest Musician</span>
-            <br />
-            <span class="red--text text--lighten-3">Lifelong Learner</span>
+            <div class="display-1">
+              <span class="new-font blue--text text--lighten-3">Full Stack Developer</span>
+              <br />
+              <span class="new-font amber--text text--lighten-4">Hobbiest Musician</span>
+              <br />
+              <span class="new-font red--text text--lighten-3">Lifelong Learner</span>
+            </div>
           </v-flex>
         </v-layout>
       </v-container>
@@ -62,6 +63,9 @@ export default {
 }
 a {
   text-decoration: none;
+}
+.new-font {
+  font-family: "Lexend Deca", sans-serif;
 }
 </style>
 

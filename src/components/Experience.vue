@@ -2,7 +2,7 @@
   <Module id="experience" title="Experience">
     <v-expansion-panels>
       <v-expansion-panel
-        class="amber lighten-4"
+        class="grey lighten-4"
         v-for="experience in experiences"
         :key="experience.id"
       >

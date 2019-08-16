@@ -1,9 +1,16 @@
 <template>
   <v-app-bar app dark :color="menuColor">
     <v-avatar tile size="40">
-      <v-img :src="require('@/assets/logo.png')"></v-img>
+      <v-img
+        class="point"
+        :src="require('@/assets/logo.png')"
+        @click="$vuetify.goTo('#home', options)"
+      ></v-img>
     </v-avatar>
-    <v-toolbar-title class="headline ml-3 text-uppercase hidden-sm-and-down">Taylor Misch</v-toolbar-title>
+    <v-toolbar-title
+      class="point ml-3 text-uppercase hidden-sm-and-down"
+      @click="$vuetify.goTo('#home', options)"
+    >Taylor Misch</v-toolbar-title>
     <v-spacer></v-spacer>
 
     <v-toolbar-items class="hidden-xs-only">
@@ -66,3 +73,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.point:hover {
+  cursor: pointer;
+}
+</style>

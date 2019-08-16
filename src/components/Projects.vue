@@ -2,7 +2,7 @@
   <Module id="projects" title="Projects">
     <v-layout wrap>
       <v-flex xs6 md4 lg3 xl2 v-for="project in projects" :key="project.name">
-        <v-card color="amber lighten-4" class="text-xs-center ma-3">
+        <v-card color="grey lighten-4" class="text-xs-center ma-3">
           <v-responsive>
             <v-tooltip top color="black">
               <template v-slot:activator="{ on }">
@@ -19,13 +19,19 @@
             </v-tooltip>
           </v-responsive>
 
-          <v-card-text class="text-center black--text font-weight-medium title hidden-md-and-up">
-            <a :href="project.url">{{project.name}}</a>
+          <v-card-text
+            class="text-center grey--text text--darken-3 font-weight-medium body-1 hidden-md-and-up"
+          >
+            <a :href="project.url">
+              <h4>{{project.name}}</h4>
+            </a>
           </v-card-text>
           <v-card-text
-            class="text-center black--text font-weight-medium headline hidden-sm-and-down"
+            class="text-center grey--text text--darken-3 font-weight-medium body-1 hidden-sm-and-down"
           >
-            <a :href="project.url">{{project.name}}</a>
+            <a :href="project.url">
+              <h3>{{project.name}}</h3>
+            </a>
           </v-card-text>
           <v-card-actions>
             <v-layout mb-1 justify-center>
@@ -69,6 +75,14 @@ export default {
           github: "https://github.com/taylor-misch/soundscript",
           alt: "SoundScript - a coding language for music",
           label: "SoundScript's Github"
+        },
+        {
+          name: "Portfolio Website",
+          logo: "portfolio.png",
+          url: "https://taylormisch.com",
+          github: "https://github.com/taylor-misch/portfolio-website",
+          alt: "Where I show off and talk about myself",
+          label: "Portfolio Websites's Github"
         }
       ]
     };
