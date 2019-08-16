@@ -66,7 +66,7 @@ export default {
           url: "https://taylor-misch.github.io/bytepocket/",
           github: "https://github.com/taylor-misch/bytepocket",
           alt: "Bytepocket - cryptocurrency wallet tracker",
-          label: "Bytepocket's Github"
+          label: "Bytepocket's GitHub"
         },
         {
           name: "SoundScript",
@@ -74,7 +74,7 @@ export default {
           url: "https://taylor-misch.github.io/soundscript/",
           github: "https://github.com/taylor-misch/soundscript",
           alt: "SoundScript - a coding language for music",
-          label: "SoundScript's Github"
+          label: "SoundScript's GitHub"
         },
         {
           name: "Portfolio Website",
@@ -82,7 +82,7 @@ export default {
           url: "https://taylormisch.com",
           github: "https://github.com/taylor-misch/portfolio-website",
           alt: "Where I show off and talk about myself",
-          label: "Portfolio Websites's Github"
+          label: "Portfolio Website's GitHub"
         }
       ]
     };

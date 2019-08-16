@@ -84,8 +84,8 @@ export default {
           title: "Software Engineer",
           dates: "September 2018 - May 2019",
           outcomes: [
-            "Designed and developed a texting service software for the University of Wisconin - Eau Claire's fundraising foundation",
-            "Developed Parking Notifier API using React, Twillio, and MongoDB",
+            "Designed and developed texting service software for the University of Wisconin - Eau Claire's fundraising foundation",
+            "Developed Parking Notifier API using Node.js Express, React, Twillio, and MongoDB",
             "Worked in a loosely based Agile methodology using GitHub, Slack, Waffle, and Travis CI",
             "Created software solutions that improved campus life for students and faculty"
           ]
@@ -98,7 +98,7 @@ export default {
           outcomes: [
             "Constructed and analyzed financial charts and graphs related to Travelers IT department's spending",
             "Explored new technologies that improved application scalability and reduced cost",
-            "Competed in and won a summer long company wide (interns) innovation jam creating and pitching an idea for an internal onboarding app",
+            "Competed in and won a summer-long company-wide (interns) innovation jam creating and pitching an idea for an internal onboarding app",
             "Planned and accomplished units of work using a Personal Kanban approach"
           ]
         },
