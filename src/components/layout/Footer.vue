@@ -4,7 +4,7 @@
       py-4
       text-center
       white--text
-    >&copy; {{ new Date().getFullYear() }} —Taylor Misch. All Rights Reserverd</v-flex>
+    >&copy; {{ new Date().getFullYear() }} —Taylor Misch. All Rights Reserved</v-flex>
   </v-footer>
 </template>
 
