@@ -71,7 +71,7 @@ export default {
         {
           name: "SoundScript",
           logo: "soundscript.png",
-          url: "https://taylor-misch.github.io/soundscript/",
+          url: "https://soundscript.netlify.com/",
           github: "https://github.com/taylor-misch/soundscript",
           alt: "SoundScript - a coding language for music",
           label: "SoundScript's GitHub"
