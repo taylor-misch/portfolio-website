@@ -37,7 +37,7 @@
             <v-layout mb-1 justify-center>
               <v-tooltip bottom color="black">
                 <template v-slot:activator="{ on }">
-                  <a :href="project.github">
+                  <a :href="project.iconLink">
                     <v-icon x-large color="black" v-on="on" :class="project.icon"></v-icon>
                   </a>
                 </template>
@@ -64,7 +64,6 @@ export default {
           name: "Bytepocket",
           logo: "bytepocket.jpg",
           url: "https://taylor-misch.github.io/bytepocket/",
-          github: "https://github.com/taylor-misch/bytepocket",
           iconLink: "https://github.com/taylor-misch/bytepocket",
           icon: "fab fa-github",
           alt: "Bytepocket - cryptocurrency wallet tracker",
@@ -74,7 +73,6 @@ export default {
           name: "SoundScript",
           logo: "soundscript.png",
           url: "https://soundscript.netlify.com/",
-          github: "https://github.com/taylor-misch/soundscript",
           iconLink: "https://github.com/taylor-misch/soundscript",
           icon: "fab fa-github",
           alt: "SoundScript - a coding language for music",
@@ -84,7 +82,6 @@ export default {
           name: "Portfolio Website",
           logo: "portfolio.png",
           url: "https://taylormisch.com",
-          github: "https://github.com/taylor-misch/portfolio-website",
           iconLink: "https://github.com/taylor-misch/portfolio-website",
           icon: "fab fa-github",
           alt: "Where I show off and talk about myself",
@@ -94,7 +91,6 @@ export default {
           name: "Bass Build Project",
           logo: "portfolio.png",
           url: "https://imgur.com/a/3g41wKj",
-          github: "https://imgur.com/a/3g41wKj",
           iconLink: "https://imgur.com/a/3g41wKj",
           icon: "fas fa-info-circle",
           alt: "Images from when I built my first bass guitar",
