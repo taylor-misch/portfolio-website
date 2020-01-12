@@ -89,11 +89,11 @@ export default {
         },
         {
           name: "Bass Build Project",
-          logo: "portfolio.png",
+          logo: "bass.png",
           url: "https://imgur.com/a/3g41wKj",
           iconLink: "https://imgur.com/a/3g41wKj",
           icon: "fas fa-info-circle",
-          alt: "Images from when I built my first bass guitar",
+          alt: "Misch No. 1",
           label: "Bass Build Imgur Album"
         }
       ]
