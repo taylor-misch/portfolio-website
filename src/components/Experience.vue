@@ -84,7 +84,7 @@ export default {
           title: "Software Engineer",
           dates: "September 2018 - May 2019",
           outcomes: [
-            "Designed and developed texting service software for the University of Wisconin - Eau Claire's fundraising foundation",
+            "Designed and developed texting service software for the University of Wisconsin - Eau Claire's fundraising foundation",
             "Developed Parking Notifier API using Node.js Express, React, Twillio, and MongoDB",
             "Worked in a loosely based Agile methodology using GitHub, Slack, Waffle, and Travis CI",
             "Created software solutions that improved campus life for students and faculty"
