@@ -57,12 +57,14 @@ export default {
       experiences: [
         {
           id: 1,
-          company: "Church Mutual Insurance Company",
+          company: "Church Mutual Insurance Company, S.I.",
           title: "Associate Developer",
           dates: "June 2019 - Present",
           outcomes: [
-            "Develop proof of concept applications using the Spring and Vue.js frameworks",
-            "Explore frontend solutions with Vuetify, Vuex, and Vue-Router"
+            "Develop RESTful services using the Spring Framework to support the implementation of the company’s first external facing customer and broker portal",
+            "Technical lead on a project to create a RESTful service that generates certificate of liability insurance and evidence of property documents",
+            "Design and develop frontend enhancements to systems built with Vue.js and Vuetify frameworks",
+            "Suggest and introduce Apache PDFBox as an open-source solution for generating and editing PDFs"
           ]
         },
         {
@@ -84,10 +86,11 @@ export default {
           title: "Software Engineer",
           dates: "September 2018 - May 2019",
           outcomes: [
-            "Designed and developed texting service software for the University of Wisconsin - Eau Claire's fundraising foundation",
-            "Developed Parking Notifier API using Node.js Express, React, Twillio, and MongoDB",
-            "Worked in a loosely based Agile methodology using GitHub, Slack, Waffle, and Travis CI",
-            "Created software solutions that improved campus life for students and faculty"
+            "One of five founding members of student-run software development company with a focus to make software that improves campus life",
+            "Developed applications using Node.js, Express, React, and MongoDB",
+            "Created a 'winter-rules' parking notification service that let students know what side of the street they should park on when the city of Eau Claire needed to plow the streets",
+            "Built a messaging service and admin dashboard that consumed Twilio’s REST APIs for the University of Wisconsin - Eau Claire's fundraising foundation",
+            "Leveraged Kanban boards and agile methodology along with GitHub for version control to complete work items while also studying as a full-time student."
           ]
         },
         {
@@ -104,7 +107,7 @@ export default {
         },
         {
           id: 5,
-          company: "Church Mutual Insurance Company",
+          company: "Church Mutual Insurance Company, S.I.",
           title: "IT Intern, Java Developer",
           dates: "May - August 2017",
           outcomes: [
