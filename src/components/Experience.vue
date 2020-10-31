@@ -89,7 +89,7 @@ export default {
             "One of five founding members of student-run software development company with a focus to make software that improves campus life",
             "Developed applications using Node.js, Express, React, and MongoDB",
             "Created a 'winter-rules' parking notification service that let students know what side of the street they should park on when the city of Eau Claire needed to plow the streets",
-            "Built a messaging service and admin dashboard that consumed Twilio’s REST APIs for the University of Wisconin - Eau Claire's fundraising foundation",
+            "Built a messaging service and admin dashboard that consumed Twilio’s REST APIs for the University of Wisconsin - Eau Claire's fundraising foundation",
             "Leveraged Kanban boards and agile methodology along with GitHub for version control to complete work items while also studying as a full-time student."
           ]
         },
