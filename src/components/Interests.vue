@@ -1,7 +1,7 @@
 <template>
   <Module id="interests" title="Interests">
-    <v-layout wrap>
-      <v-flex xs12 md6 v-for="interest in interests" :key="interest.name">
+    <v-row class="wrap">
+      <v-col xs="12" md="6" v-for="interest in interests" :key="interest.name">
         <v-card color="grey lighten-4" class="text-xs-center ma-3">
           <v-card-text class="text-center">
             <v-icon x-large color="black">{{interest.icon}}</v-icon>
@@ -11,8 +11,8 @@
           </v-card-text>
           <v-card-text class="text-justify black--text font-weight-medium body-1">{{interest.body}}</v-card-text>
         </v-card>
-      </v-flex>
-    </v-layout>
+      </v-col>
+    </v-row>
   </Module>
 </template>
 
