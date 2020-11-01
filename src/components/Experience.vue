@@ -7,26 +7,27 @@
         :key="experience.id"
       >
         <v-expansion-panel-header>
-          <v-layout>
-            <v-flex class="xs4 body-1 text-left hidden-sm-and-down">
+          <v-row>
+            <v-col xs="4" class="body-1 text-left hidden-sm-and-down">
               <strong>{{experience.title}}</strong>
-            </v-flex>
-            <v-flex class="xs4 body-1 text-center hidden-sm-and-down">
+            </v-col>
+            <v-col xs="4" class="body-1 text-center hidden-sm-and-down">
               <i>{{experience.dates}}</i>
-            </v-flex>
-            <v-flex class="pr-3 xs4 body-1 text-right hidden-sm-and-down">
+            </v-col>
+            <v-col xs="4" class="pr-3 body-1 text-right hidden-sm-and-down">
               <strong>{{experience.company}}</strong>
-            </v-flex>
-            <v-flex class="xs5 body-2 text-left hidden-md-and-up">
+            </v-col>
+            <v-col xs="5" class="body-2 text-left hidden-md-and-up">
               <strong>{{experience.title}}</strong>
-            </v-flex>
-            <v-flex pr-3 class="xs7 body-2 text-center hidden-md-and-up">
+            </v-col>
+            <v-col xs="7" pr-3 class="body-2 text-center hidden-md-and-up">
               <strong>{{experience.company}}</strong>
               <br />
               <i>({{experience.dates}})</i>
-            </v-flex>
-          </v-layout>
+            </v-col>
+          </v-row>
         </v-expansion-panel-header>
+        <!-- TODO - fix duplicate key error experience in expansion panels -->
         <v-expansion-panel-content>
           <ul>
             <li
