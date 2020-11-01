@@ -1,7 +1,8 @@
 <template>
-  <v-container fluid grid-list-lg>
-    <v-layout justify-center>
-      <v-flex xs12 sm10>
+  <v-container class="fluid grid-list-lg">
+    <v-row class="justify-center" cols="12">
+      <v-col xs="12" sm="10">
+        <!-- TODO Clean up double logic for section lables-->
         <div
           class="body-1 red--text text--lighten-1 font-weight-medium text-uppercase hidden-sm-and-down"
         >
@@ -12,13 +13,13 @@
         >
           <h1>{{title}}</h1>
         </div>
-      </v-flex>
-    </v-layout>
-    <v-layout align-center justify-center>
-      <v-flex xs12 sm10>
+      </v-col>
+    </v-row>
+    <v-row class="align-center justify-center" cols="12">
+      <v-col xs="12" sm="10">
         <slot></slot>
-      </v-flex>
-    </v-layout>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
