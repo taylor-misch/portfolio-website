@@ -1,10 +1,10 @@
 <template>
   <v-footer dark padless color="grey darken-3">
-    <v-flex
-      py-4
-      text-center
-      white--text
-    >&copy; {{ new Date().getFullYear() }} —Taylor Misch. All Rights Reserved</v-flex>
+    <v-row cols="12">
+      <v-col
+        class="text-center py-4 white--text"
+      >&copy; {{ new Date().getFullYear() }} —Taylor Misch. All Rights Reserved</v-col>
+    </v-row>
   </v-footer>
 </template>
 
