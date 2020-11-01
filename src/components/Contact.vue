@@ -1,13 +1,13 @@
 <template>
   <Module id="contact">
     <v-container fluid>
-      <v-layout justify-center>
-        <v-flex md1 xs2 v-for="icon in icons" :key="icon.url">
+      <v-row cols="12" class="justify-center">
+        <v-col md="1" xs="2" v-for="icon in icons" :key="icon.url">
           <a :href="icon.url">
             <v-icon large :color="icon.color" :class="icon.class">{{icon.text}}</v-icon>
           </a>
-        </v-flex>
-      </v-layout>
+        </v-col>
+      </v-row>
     </v-container>
   </Module>
 </template>
