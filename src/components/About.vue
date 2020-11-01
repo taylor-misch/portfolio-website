@@ -1,14 +1,14 @@
 <template>
   <Module id="about" title="About">
-    <v-layout md6>
-      <v-flex class="body-1 text-left grey--text text--darken-3">
+    <v-row cols="12" md="6">
+      <v-col class="body-1 text-left grey--text text--darken-3">
         <h3>Hi, I'm Taylor Misch. This site has been a bit of a passion project of mine for a long time now. As a software developer, I've always thought it is a rite of passage to create your own website - so here's mine.</h3>
         <br />
         <h3>On this site I post projects that I've worked on (inside and outside the realm of software development), things I'm interested in, and pictures from my latest adventure - whatever that may be. Feel free to look around or reach out to me if you think I can help you in anyway or would just like to talk about something you see here.</h3>
-      </v-flex>
-    </v-layout>
-    <v-layout md6 justify-center>
-      <v-flex grow-shrink-0 class="xs12 md8 xl6">
+      </v-col>
+    </v-row>
+    <v-row cols="12" md="6" class="justify-center">
+      <v-col grow-shrink-0 xs="12" md="8" xl="6">
         <v-responsive aspect-ratio="16/9">
           <v-carousel height="auto" hide-delimiters cycle interval="7000">
             <v-carousel-item
@@ -18,8 +18,8 @@
             ></v-carousel-item>
           </v-carousel>
         </v-responsive>
-      </v-flex>
-    </v-layout>
+      </v-col>
+    </v-row>
   </Module>
 </template>
 
