@@ -1,7 +1,7 @@
 <template>
   <Module id="projects" title="Projects">
-    <v-layout wrap>
-      <v-flex xs6 md4 lg3 xl2 v-for="project in projects" :key="project.name">
+    <v-row class="wrap">
+      <v-col xs="6" md="4" lg="3" xl="2" v-for="project in projects" :key="project.name">
         <v-card color="grey lighten-4" class="text-xs-center ma-3">
           <v-responsive>
             <v-tooltip top color="black">
@@ -34,7 +34,7 @@
             </a>
           </v-card-text>
           <v-card-actions>
-            <v-layout mb-1 justify-center>
+            <v-layout class="mb-1 justify-center">
               <v-tooltip bottom color="black">
                 <template v-slot:activator="{ on }">
                   <a :href="project.iconLink">
@@ -46,8 +46,8 @@
             </v-layout>
           </v-card-actions>
         </v-card>
-      </v-flex>
-    </v-layout>
+      </v-col>
+    </v-row>
   </Module>
 </template>
 
@@ -103,10 +103,12 @@ export default {
 </script>
 
 <style scoped>
-a {
+a,
+a:visited,
+a:link,
+a:hover,
+a:active {
   text-decoration: inherit;
-}
-a:visited {
   color: inherit;
 }
 </style>
