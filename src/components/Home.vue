@@ -2,8 +2,8 @@
   <div id="home">
     <div class="pimg1">
       <v-container fill-height>
-        <v-layout column fill-height align-center justify-center>
-          <v-flex xs1 class="display-4 text-center font-weight-medium">
+        <v-row class="column fill-height align-center justify-center">
+          <v-col xs1 class="display-4 text-center font-weight-medium">
             <div class="new-font text-center font-weight-medium mb4 white--text">Taylor Misch</div>
             <v-tooltip left>
               <template v-slot:activator="{ on }">
@@ -21,6 +21,7 @@
               </template>
               <span>GitHub</span>
             </v-tooltip>
+            <!-- TODO - update mail icon to be a resume download icon -->
             <v-tooltip right>
               <template v-slot:activator="{ on }">
                 <a href="mailto:taylormisch@gmail.com">
@@ -36,8 +37,8 @@
               <br />
               <span class="new-font red--text text--lighten-3">Lifelong Learner</span>
             </div>
-          </v-flex>
-        </v-layout>
+          </v-col>
+        </v-row>
       </v-container>
     </div>
   </div>

@@ -14,6 +14,7 @@
 
 <script>
 // TODO - update contact component to be a form, this component will have to be named something else
+// TODO - check to see if the contact component is even used
 import Module from "@/components/layout/Module";
 export default {
   components: {
