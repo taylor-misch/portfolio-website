@@ -27,17 +27,11 @@
           </v-responsive>
 
           <v-card-text
-            class="text-center grey--text text--darken-3 font-weight-medium body-1 hidden-md-and-up"
+            class="text-center grey--text text--darken-3 font-weight-medium body-1"
           >
             <a :href="project.url">
-              <h4>{{ project.name }}</h4>
-            </a>
-          </v-card-text>
-          <v-card-text
-            class="text-center grey--text text--darken-3 font-weight-medium body-1 hidden-sm-and-down"
-          >
-            <a :href="project.url">
-              <h3>{{ project.name }}</h3>
+              <h4 v-if="$vuetify.breakpoint.mdAndUp">{{ project.name }}</h4>
+              <h3 v-else>{{ project.name }}</h3>
             </a>
           </v-card-text>
           <v-card-actions>

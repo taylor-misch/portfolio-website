@@ -9,7 +9,14 @@
         <v-expansion-panel-header>
           <v-row>
             <!-- TODO find a way to conditionally apply logic -->
-            <v-col cols="4" class="body-1 text-left hidden-sm-and-down">
+            <v-col
+              :cols="$vuetify.breakpoint.mdAndUp ? '4' : '5'"
+              :class="
+                $vuetify.breakpoint.mdAndUp
+                  ? 'body-1 text-left'
+                  : 'body-2 text-left'
+              "
+            >
               <strong>{{ experience.title }}</strong>
             </v-col>
             <v-col cols="4" class="body-1 text-center hidden-sm-and-down">
@@ -20,9 +27,6 @@
             </v-col>
 
             <!-- TODO find a way to conditionally apply logic -->
-            <v-col cols="5" class="body-2 text-left hidden-md-and-up">
-              <strong>{{ experience.title }}</strong>
-            </v-col>
             <v-col cols="7" pr-3 class="body-2 text-center hidden-md-and-up">
               <strong>{{ experience.company }}</strong>
               <br />
@@ -34,19 +38,12 @@
         <v-expansion-panel-content>
           <ul>
             <li
-              class="body-1"
+              :class="$vuetify.breakpoint.mdAndUp ? 'body-1' : 'body-2'"
               v-for="(outcome, index) in experience.outcomes"
               :key="index"
             >
               {{ outcome }}
             </li>
-            <!-- <li
-              class="body-2 hidden-md-and-up"
-              v-for="(outcome, index) in experience.outcomes"
-              :key="index"
-            >
-              {{ outcome }}
-            </li> -->
           </ul>
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -60,6 +57,22 @@ export default {
   components: {
     Module,
   },
+  // computed: {
+  //   text() {
+  //     switch (this.$vuetify.breakpoint.name) {
+  //       case "xs":
+  //         return "body-2";
+  //       case "sm":
+  //         return "body-2";
+  //       case "md":
+  //         return "body-1";
+  //       case "lg":
+  //         return "body-1";
+  //       case "xl":
+  //         return "body-1";
+  //     }
+  //   },
+  // },
   data() {
     return {
       experiences: [
