@@ -8,22 +8,25 @@
       >
         <v-expansion-panel-header>
           <v-row>
-            <v-col xs="4" class="body-1 text-left hidden-sm-and-down">
-              <strong>{{experience.title}}</strong>
+            <!-- TODO find a way to conditionally apply logic -->
+            <v-col cols="4" class="body-1 text-left hidden-sm-and-down">
+              <strong>{{ experience.title }}</strong>
             </v-col>
-            <v-col xs="4" class="body-1 text-center hidden-sm-and-down">
-              <i>{{experience.dates}}</i>
+            <v-col cols="4" class="body-1 text-center hidden-sm-and-down">
+              <i>{{ experience.dates }}</i>
             </v-col>
-            <v-col xs="4" class="pr-3 body-1 text-right hidden-sm-and-down">
-              <strong>{{experience.company}}</strong>
+            <v-col cols="4" class="pr-3 body-1 text-right hidden-sm-and-down">
+              <strong>{{ experience.company }}</strong>
             </v-col>
-            <v-col xs="5" class="body-2 text-left hidden-md-and-up">
-              <strong>{{experience.title}}</strong>
+
+            <!-- TODO find a way to conditionally apply logic -->
+            <v-col cols="5" class="body-2 text-left hidden-md-and-up">
+              <strong>{{ experience.title }}</strong>
             </v-col>
-            <v-col xs="7" pr-3 class="body-2 text-center hidden-md-and-up">
-              <strong>{{experience.company}}</strong>
+            <v-col cols="7" pr-3 class="body-2 text-center hidden-md-and-up">
+              <strong>{{ experience.company }}</strong>
               <br />
-              <i>({{experience.dates}})</i>
+              <i>({{ experience.dates }})</i>
             </v-col>
           </v-row>
         </v-expansion-panel-header>
@@ -31,15 +34,19 @@
         <v-expansion-panel-content>
           <ul>
             <li
-              class="body-1 hidden-sm-and-down"
+              class="body-1"
               v-for="(outcome, index) in experience.outcomes"
               :key="index"
-            >{{outcome}}</li>
-            <li
+            >
+              {{ outcome }}
+            </li>
+            <!-- <li
               class="body-2 hidden-md-and-up"
               v-for="(outcome, index) in experience.outcomes"
               :key="index"
-            >{{outcome}}</li>
+            >
+              {{ outcome }}
+            </li> -->
           </ul>
         </v-expansion-panel-content>
       </v-expansion-panel>
@@ -51,7 +58,7 @@
 import Module from "@/components/layout/Module";
 export default {
   components: {
-    Module
+    Module,
   },
   data() {
     return {
@@ -65,8 +72,8 @@ export default {
             "Develop RESTful services using the Spring Framework to support the implementation of the company’s first external facing customer and broker portal",
             "Technical lead on a project to create a RESTful service that generates certificate of liability insurance and evidence of property documents",
             "Design and develop frontend enhancements to systems built with Vue.js and Vuetify frameworks",
-            "Suggest and introduce Apache PDFBox as an open-source solution for generating and editing PDFs"
-          ]
+            "Suggest and introduce Apache PDFBox as an open-source solution for generating and editing PDFs",
+          ],
         },
         {
           id: 2,
@@ -78,8 +85,8 @@ export default {
             "Univerisity Honors Program",
             "2019's Outstanding Business Communication Student Award",
             "Mathematics Minor",
-            "Advanced Business Communication Certificate"
-          ]
+            "Advanced Business Communication Certificate",
+          ],
         },
         {
           id: 3,
@@ -91,8 +98,8 @@ export default {
             "Developed applications using Node.js, Express, React, and MongoDB",
             "Created a 'winter-rules' parking notification service that let students know what side of the street they should park on when the city of Eau Claire needed to plow the streets",
             "Built a messaging service and admin dashboard that consumed Twilio’s REST APIs for the University of Wisconsin - Eau Claire's fundraising foundation",
-            "Leveraged Kanban boards and agile methodology along with GitHub for version control to complete work items while also studying as a full-time student."
-          ]
+            "Leveraged Kanban boards and agile methodology along with GitHub for version control to complete work items while also studying as a full-time student.",
+          ],
         },
         {
           id: 4,
@@ -103,8 +110,8 @@ export default {
             "Constructed and analyzed financial charts and graphs related to Travelers IT department's spending",
             "Explored new technologies that improved application scalability and reduced cost",
             "Competed in and won a summer-long company-wide (interns) innovation jam creating and pitching an idea for an internal onboarding app",
-            "Planned and accomplished units of work using a Personal Kanban approach"
-          ]
+            "Planned and accomplished units of work using a Personal Kanban approach",
+          ],
         },
         {
           id: 5,
@@ -115,8 +122,8 @@ export default {
             "Developed a Spring Framework MVC application to streamline internal business processes",
             "Worked in an Agile environment as an active member of a Scrum Team",
             "Delivered an end-of-summer results presentation to senior leadership IT staff",
-            "Communicated and presented completed bodies of work during bi-weekly sprint reviews"
-          ]
+            "Communicated and presented completed bodies of work during bi-weekly sprint reviews",
+          ],
         },
         {
           id: 6,
@@ -126,12 +133,12 @@ export default {
           outcomes: [
             "Resolved database incidents that arose during the distribution process",
             "Performed new user setups and server promotes for the end-user distribution application",
-            "Organized and submitted regular updates to the team's Sharepoint resource site"
-          ]
-        }
-      ]
+            "Organized and submitted regular updates to the team's Sharepoint resource site",
+          ],
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
