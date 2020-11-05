@@ -20,7 +20,13 @@
     <v-row class="justify-center">
       <v-col grow-shrink-0 cols="11" md="8" xl="6">
         <v-responsive aspect-ratio="16/9">
-          <v-carousel height="auto" hide-delimiters cycle interval="7000">
+          <v-carousel
+            height="auto"
+            hide-delimiters
+            cycle
+            interval="7000"
+            show-arrows-on-hover
+          >
             <v-carousel-item
               v-for="image in images"
               :key="image.id"

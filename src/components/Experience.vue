@@ -57,22 +57,6 @@ export default {
   components: {
     Module,
   },
-  // computed: {
-  //   text() {
-  //     switch (this.$vuetify.breakpoint.name) {
-  //       case "xs":
-  //         return "body-2";
-  //       case "sm":
-  //         return "body-2";
-  //       case "md":
-  //         return "body-1";
-  //       case "lg":
-  //         return "body-1";
-  //       case "xl":
-  //         return "body-1";
-  //     }
-  //   },
-  // },
   data() {
     return {
       experiences: [

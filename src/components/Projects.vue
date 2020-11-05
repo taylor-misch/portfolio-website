@@ -30,8 +30,8 @@
             class="text-center grey--text text--darken-3 font-weight-medium body-1"
           >
             <a :href="project.url">
-              <h4 v-if="$vuetify.breakpoint.mdAndUp">{{ project.name }}</h4>
-              <h3 v-else>{{ project.name }}</h3>
+              <h3 v-if="$vuetify.breakpoint.mdAndUp">{{ project.name }}</h3>
+              <h4 v-else>{{ project.name }}</h4>
             </a>
           </v-card-text>
           <v-card-actions>
