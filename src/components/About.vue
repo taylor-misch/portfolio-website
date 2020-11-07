@@ -19,7 +19,11 @@
     </v-row>
     <v-row md6 class="justify-center">
       <v-col cols="11" md="8" xl="6">
-        <v-img :src="require('@/assets/carousel/' + imageSource)"></v-img>
+        <v-img
+          :src="require('@/assets/carousel/' + imageSource)"
+          contain
+          max-height="700px"
+        ></v-img>
       </v-col>
     </v-row>
   </Module>
@@ -40,10 +44,6 @@ export default {
     return {
       images: [
         {
-          src: "cathedral_rock.jpg",
-          alt: "Cathedral Rock",
-        },
-        {
           src: "eaa.jpg",
           alt: "Experimental Aircraft Association 2019",
         },
@@ -62,6 +62,14 @@ export default {
         {
           src: "taylors_falls.jpg",
           alt: "Taylor's Falls with Rachel and Leah",
+        },
+        {
+          src: "state_fair.jpg",
+          alt: "Minnesota State Fair 2019",
+        },
+        {
+          src: "parasailing.jpg",
+          alt: "Parasailing in Fort Meyers with Rachel and Leah",
         },
       ],
     };
