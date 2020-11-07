@@ -17,23 +17,9 @@
         </h3>
       </v-col>
     </v-row>
-    <v-row class="justify-center">
-      <v-col grow-shrink-0 cols="11" md="8" xl="6">
-        <v-responsive aspect-ratio="16/9">
-          <v-carousel
-            height="auto"
-            hide-delimiters
-            cycle
-            interval="7000"
-            show-arrows-on-hover
-          >
-            <v-carousel-item
-              v-for="image in images"
-              :key="image.id"
-              :src="require('@/assets/carousel/' + image.src)"
-            ></v-carousel-item>
-          </v-carousel>
-        </v-responsive>
+    <v-row md6 class="justify-center">
+      <v-col cols="11" md="8" xl="6">
+        <v-img :src="require('@/assets/carousel/' + imageSource)"></v-img>
       </v-col>
     </v-row>
   </Module>
@@ -45,36 +31,35 @@ export default {
   components: {
     Module,
   },
+  computed: {
+    imageSource() {
+      return this.images[new Date().getDay()].src;
+    },
+  },
   data() {
     return {
       images: [
         {
-          id: 1,
           src: "cathedral_rock.jpg",
           alt: "Cathedral Rock",
         },
         {
-          id: 2,
           src: "eaa.jpg",
           alt: "Experimental Aircraft Association 2019",
         },
         {
-          id: 3,
           src: "tough_mudder.jpg",
           alt: "Tough Mudder Post-Race",
         },
         {
-          id: 4,
           src: "flatiron.jpg",
           alt: "Flatiron in the Arizona",
         },
         {
-          id: 5,
           src: "sutherland.jpg",
           alt: "Sutherland hall last day of junior year",
         },
         {
-          id: 6,
           src: "taylors_falls.jpg",
           alt: "Taylor's Falls with Rachel and Leah",
         },

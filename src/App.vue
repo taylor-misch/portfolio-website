@@ -1,13 +1,13 @@
 <template>
   <v-app>
     <NavBar />
-    <v-content class="blue lighten-4">
+    <v-main class="blue lighten-4">
       <Home />
       <About />
       <Experience />
       <Projects />
       <Interests />
-    </v-content>
+    </v-main>
     <Footer />
   </v-app>
 </template>
@@ -29,12 +29,12 @@ export default {
     Projects,
     Interests,
     NavBar,
-    Footer
+    Footer,
   },
   metaInfo: {
     title: "Taylor Misch",
-    titleTemplate: "%s | Portfolio"
-  }
+    titleTemplate: "%s | Portfolio",
+  },
 };
 </script>
 
