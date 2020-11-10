@@ -1,6 +1,14 @@
 <template>
   <v-dialog v-model="dialog" max-width="1000px" scrollable>
-    <slot></slot>
+    <template v-slot:activator="{ on, attrs }">
+      <ProjectCard
+        :project="project"
+        v-bind="attrs"
+        v-on="on"
+        @click="toggle()"
+      >
+      </ProjectCard>
+    </template>
     <v-card color="grey lighten-3">
       <v-row>
         <v-spacer></v-spacer>
@@ -50,7 +58,14 @@
 </template>
 
 <script>
+import ProjectCard from "@/components/ProjectCard";
 export default {
+  components: {
+    ProjectCard,
+  },
+  props: {
+    project: Object,
+  },
   data() {
     return {
       dialog: false,
@@ -59,6 +74,10 @@ export default {
   methods: {
     closeDialog() {
       this.dialog = false;
+    },
+    toggle() {
+      console.log("CLICKED");
+      this.dialog = true;
     },
   },
 };
