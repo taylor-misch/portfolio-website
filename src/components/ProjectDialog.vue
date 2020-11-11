@@ -1,58 +1,35 @@
 <template>
-  <v-dialog v-model="dialog" max-width="1000px" scrollable>
+  <v-dialog v-model="dialog" max-width="1100px">
     <template v-slot:activator="{ on, attrs }">
-      <ProjectCard
-        :project="project"
-        v-bind="attrs"
-        v-on="on"
-        @click="toggle()"
-      >
-      </ProjectCard>
+      <div v-bind="attrs" v-on="on">
+        <ProjectCard :project="project"> </ProjectCard>
+      </div>
     </template>
-    <v-card color="grey lighten-3">
-      <v-row>
-        <v-spacer></v-spacer>
-        <!-- TODO - update icon to change color on click -->
-        <v-col cols="1" class="clickable"
-          ><v-icon
-            large
-            @click="closeDialog"
-            class="mx-3 far fa-window-close"
-          ></v-icon
-        ></v-col>
-      </v-row>
+    <v-card color="grey lighten-3" class="remove-scroll">
       <v-row class="justify-center">
-        <v-col cols="3">
+        <v-col cols="5" sm="4" md="3" lg="2">
           <v-img
-            :src="require('@/assets/projects/portfolio.png')"
+            :src="require('@/assets/projects/' + project.logo)"
             class="rounded-xl"
           ></v-img>
         </v-col>
+        <!-- <v-col cols="3" sm="1" class="clickable">
+          <v-icon
+            large
+            @click="dialog = false"
+            class="mx-3 far fa-window-close"
+          >
+          </v-icon>
+        </v-col> -->
       </v-row>
       <v-card-text>
-        Lorem ipsum dolor sit amet, semper quis, sapien id natoque elit. Nostra
-        urna at, magna at neque sed sed ante imperdiet, dolor mauris cursus
-        velit, velit non, sem nec. Volutpat sem ridiculus placerat leo, augue
-        aptent non. Quisque turpis. Phasellus quis lectus luctus orci eget
-        rhoncus. Amet donec vestibulum mattis vel mattis mollis massa ut dolor
-        ante, tempus lacinia arcu. Urna vestibulum lorem, nulla fermentum,
-        iaculis ut congue ac vivamus. Nam libero orci, pulvinar nulla, enim
-        pellentesque consectetuer leo, feugiat rhoncus rhoncus vel. Magna
-        sociosqu donec, dictum cursus ullamcorper viverra. Ultricies quis orci
-        pellentesque consectetuer leo, feugiat rhoncus rhoncus vel. Magna
-        sociosqu donec, dictum cursus ullamcorper viverra. Ultricies quis orci
-        lorem, suspendisse ut vestibulum integer, purus sed lorem pulvinar
-        habitasse turpis. +
+        <ul>
+          <li><b>Project Name:</b> {{ project.name }}</li>
+          <li><b>Project URL:</b><a :href="project.url">Visit</a></li>
+          <li><b>Built With:</b> {{ project.label }}</li>
+          <li><b>Project Description:</b> {{ project.alt }}</li>
+        </ul>
       </v-card-text>
-      <v-card-actions>
-        <v-spacer></v-spacer>
-        <v-btn color="green darken-1" text @click="dialog = false">
-          Disagree
-        </v-btn>
-        <v-btn color="green darken-1" text @click="dialog = false">
-          Agree
-        </v-btn>
-      </v-card-actions>
     </v-card>
   </v-dialog>
 </template>
@@ -71,20 +48,14 @@ export default {
       dialog: false,
     };
   },
-  methods: {
-    closeDialog() {
-      this.dialog = false;
-    },
-    toggle() {
-      console.log("CLICKED");
-      this.dialog = true;
-    },
-  },
 };
 </script>
 
 <style scoped>
 .clickable {
   cursor: pointer;
+}
+.remove-scroll {
+  overflow-x: hidden;
 }
 </style>
