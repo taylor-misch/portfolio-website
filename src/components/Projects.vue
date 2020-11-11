@@ -39,35 +39,34 @@ export default {
             {
               name: "GitHub",
               url: "https://github.com/taylor-misch/bytepocket",
-              icon: "fab fa-github",
+              icon: "mdi-git",
             },
             {
               name: "Project",
               url: "https://taylor-misch.github.io/bytepocket/",
-              icon: "fas fa-info-circle",
+              icon: "mdi-information",
             },
           ],
           skills: [
             {
+              name: "Vue.js",
+              icon: "mdi-vuejs",
+            },
+            {
+              name: "Vuetify",
+              icon: "mdi-vuetify",
+            },
+            {
               name: "JavaScript",
-              icon: "fab fa-js",
+              icon: "mdi-language-javascript",
             },
             {
               name: "HTML",
-              icon: "fab fa-html5",
+              icon: "mdi-language-html5",
             },
             {
               name: "CSS",
-              icon: "fab fa-css3-alt",
-            },
-            {
-              name: "Vue.js",
-              icon: "fab fa-vuejs",
-            },
-            {
-              // material design icons has a vuetify icon
-              name: "Vuetify",
-              icon: "fab fa-vuejs",
+              icon: "mdi-language-css3",
             },
           ],
           summary:

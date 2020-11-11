@@ -24,38 +24,30 @@
       </v-row>
       <v-card-text>
         <v-row>
-          <v-col cols="4" align-self="start">
+          <v-col cols="4">
             <b>Links:</b>
             <div v-for="link in project.links" :key="link.name">
-              <v-tooltip top>
+              <v-tooltip bottom>
                 <template v-slot:activator="{ on }">
                   <a :href="link.url">
-                    <v-icon
-                      x-large
-                      v-on="on"
-                      class="mx-3"
-                      :class="link.icon"
-                    ></v-icon>
+                    <v-icon x-large v-on="on" class="mx-3">{{
+                      link.icon
+                    }}</v-icon>
                   </a>
                 </template>
                 <span>{{ link.name }}</span>
               </v-tooltip>
             </div>
           </v-col>
-          <v-col cols="4" align-self="center">
-            <b>Name:</b> {{ project.name }}
-          </v-col>
-          <v-col cols="4" align-self="end">
+          <v-col cols="4"> <b>Name:</b> {{ project.name }} </v-col>
+          <v-col cols="4">
             <b>Skills:</b>
             <div v-for="skill in project.skills" :key="skill.name">
-              <v-tooltip top>
+              <v-tooltip bottom>
                 <template v-slot:activator="{ on }">
-                  <v-icon
-                    x-large
-                    v-on="on"
-                    class="mx-3"
-                    :class="skill.icon"
-                  ></v-icon>
+                  <v-icon x-large v-on="on" class="mx-3" :class="skill.icon">{{
+                    skill.icon
+                  }}</v-icon>
                 </template>
                 <span>{{ skill.name }}</span>
               </v-tooltip>
