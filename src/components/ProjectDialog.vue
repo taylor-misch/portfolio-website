@@ -23,12 +23,51 @@
         </v-col> -->
       </v-row>
       <v-card-text>
-        <ul>
+        <v-row>
+          <v-col cols="4" align-self="start">
+            <b>Links:</b>
+            <div v-for="link in project.links" :key="link.name">
+              <v-tooltip top>
+                <template v-slot:activator="{ on }">
+                  <a :href="link.url">
+                    <v-icon
+                      x-large
+                      v-on="on"
+                      class="mx-3"
+                      :class="link.icon"
+                    ></v-icon>
+                  </a>
+                </template>
+                <span>{{ link.name }}</span>
+              </v-tooltip>
+            </div>
+          </v-col>
+          <v-col cols="4" align-self="center">
+            <b>Name:</b> {{ project.name }}
+          </v-col>
+          <v-col cols="4" align-self="end">
+            <b>Skills:</b>
+            <div v-for="skill in project.skills" :key="skill.name">
+              <v-tooltip top>
+                <template v-slot:activator="{ on }">
+                  <v-icon
+                    x-large
+                    v-on="on"
+                    class="mx-3"
+                    :class="skill.icon"
+                  ></v-icon>
+                </template>
+                <span>{{ skill.name }}</span>
+              </v-tooltip>
+            </div>
+          </v-col>
+        </v-row>
+        <!-- <ul>
           <li><b>Project Name:</b> {{ project.name }}</li>
           <li><b>Project URL:</b><a :href="project.url">Visit</a></li>
           <li><b>Built With:</b> {{ project.label }}</li>
           <li><b>Project Description:</b> {{ project.alt }}</li>
-        </ul>
+        </ul> -->
       </v-card-text>
     </v-card>
   </v-dialog>
