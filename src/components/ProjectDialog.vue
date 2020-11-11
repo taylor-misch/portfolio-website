@@ -47,19 +47,13 @@
             <b>Skills:</b>
             <br />
             <div v-for="skill in project.skills" :key="skill.name">
-              <v-tooltip bottom>
-                <template v-slot:activator="{ on }">
-                  <v-icon
-                    x-large
-                    v-on="on"
-                    class="mx-3"
-                    :class="skill.icon"
-                    :color="skill.color"
-                    >{{ skill.icon }}</v-icon
-                  >
-                </template>
-                <span>{{ skill.name }}</span>
-              </v-tooltip>
+              <v-chip small color="grey darken-2" class="white--text"
+                ><v-avatar tile
+                  ><v-icon medium v-on="on" class="mx-3" :color="skill.color">{{
+                    skill.icon
+                  }}</v-icon></v-avatar
+                >{{ skill.name }}
+              </v-chip>
             </div>
           </v-col>
         </v-row>
