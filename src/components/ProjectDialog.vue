@@ -43,7 +43,7 @@
             <b>Name:</b><br />
             {{ project.name }}
           </v-col>
-          <v-col cols="4">
+          <v-col class="d-flex flex-row" cols="4">
             <b>Skills:</b>
             <br />
             <div v-for="skill in project.skills" :key="skill.name">
