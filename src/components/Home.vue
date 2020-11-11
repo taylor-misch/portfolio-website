@@ -91,9 +91,6 @@ export default {
   background-image: url("../assets/background.jpg");
   height: 100vh;
 }
-a {
-  text-decoration: none;
-}
 .new-font {
   font-family: "Lexend Deca", sans-serif;
 }

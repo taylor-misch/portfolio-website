@@ -39,20 +39,34 @@
               </v-tooltip>
             </div>
           </v-col>
-          <v-col cols="4"> <b>Name:</b> {{ project.name }} </v-col>
+          <v-col cols="4">
+            <b>Name:</b><br />
+            {{ project.name }}
+          </v-col>
           <v-col cols="4">
             <b>Skills:</b>
+            <br />
             <div v-for="skill in project.skills" :key="skill.name">
               <v-tooltip bottom>
                 <template v-slot:activator="{ on }">
-                  <v-icon x-large v-on="on" class="mx-3" :class="skill.icon">{{
-                    skill.icon
-                  }}</v-icon>
+                  <v-icon
+                    x-large
+                    v-on="on"
+                    class="mx-3"
+                    :class="skill.icon"
+                    :color="skill.color"
+                    >{{ skill.icon }}</v-icon
+                  >
                 </template>
                 <span>{{ skill.name }}</span>
               </v-tooltip>
             </div>
           </v-col>
+        </v-row>
+        <v-row>
+          <b>Summary:</b>
+          <br />
+          {{ project.summary }}
         </v-row>
         <!-- <ul>
           <li><b>Project Name:</b> {{ project.name }}</li>

@@ -37,7 +37,7 @@ export default {
           alt: "Bytepocket - cryptocurrency wallet tracker",
           links: [
             {
-              name: "GitHub",
+              name: "Git Repo",
               url: "https://github.com/taylor-misch/bytepocket",
               icon: "mdi-git",
             },
@@ -51,22 +51,27 @@ export default {
             {
               name: "Vue.js",
               icon: "mdi-vuejs",
+              color: "green",
             },
             {
               name: "Vuetify",
               icon: "mdi-vuetify",
-            },
-            {
-              name: "JavaScript",
-              icon: "mdi-language-javascript",
+              color: "blue lighten-2",
             },
             {
               name: "HTML",
               icon: "mdi-language-html5",
+              color: "orange",
             },
             {
               name: "CSS",
               icon: "mdi-language-css3",
+              color: "blue darken-1",
+            },
+            {
+              name: "JavaScript",
+              icon: "mdi-language-javascript",
+              color: "yellow darken-1",
             },
           ],
           summary:
