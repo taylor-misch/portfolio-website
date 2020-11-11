@@ -1,13 +1,13 @@
 <template>
-  <v-dialog v-model="dialog" max-width="1100px">
+  <v-dialog v-model="dialog" max-width="1000px">
     <template v-slot:activator="{ on, attrs }">
       <div v-bind="attrs" v-on="on">
         <ProjectCard :project="project"> </ProjectCard>
       </div>
     </template>
-    <v-card color="grey lighten-3" class="remove-scroll">
+    <v-card color="grey lighten-3" class="remove-scroll rounded-lg">
       <v-row class="justify-center">
-        <v-col cols="5" sm="4" md="3" lg="2">
+        <v-col cols="5" sm="4" md="3">
           <v-img
             :src="require('@/assets/projects/' + project.logo)"
             class="rounded-xl"

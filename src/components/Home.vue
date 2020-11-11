@@ -37,6 +37,7 @@
               </template>
               <span>GitHub</span>
             </v-tooltip>
+
             <!-- TODO - update mail icon to be a resume download icon -->
             <v-tooltip right>
               <template v-slot:activator="{ on }">
