@@ -23,37 +23,38 @@
         </v-col> -->
       </v-row>
       <v-card-text>
-        <v-row>
-          <v-col cols="4">
-            <b>Links:</b>
+        <v-row class="text-center">
+          <v-col cols="4"><h2>Links:</h2></v-col>
+          <v-col cols="4"><h2>Name:</h2></v-col>
+          <v-col cols="4"><h2>Skills:</h2></v-col>
+        </v-row>
+        <v-row align="start" justify="center">
+          <v-col cols="4" class="d-flex flex-row">
             <div v-for="link in project.links" :key="link.name">
               <v-tooltip bottom>
                 <template v-slot:activator="{ on }">
                   <a :href="link.url">
-                    <v-icon x-large v-on="on" class="mx-3">{{
-                      link.icon
-                    }}</v-icon>
+                    <v-icon large v-on="on">{{ link.icon }}</v-icon>
                   </a>
                 </template>
                 <span>{{ link.name }}</span>
               </v-tooltip>
             </div>
           </v-col>
-          <v-col cols="4">
-            <b>Name:</b><br />
-            {{ project.name }}
+          <v-col cols="4" class="text-center">
+            <h3>{{ project.name }}</h3>
           </v-col>
-          <v-col class="d-flex flex-row" cols="4">
-            <b>Skills:</b>
-            <br />
-            <div v-for="skill in project.skills" :key="skill.name">
-              <v-chip small color="grey darken-2" class="white--text"
-                ><v-avatar tile
-                  ><v-icon medium v-on="on" class="mx-3" :color="skill.color">{{
-                    skill.icon
-                  }}</v-icon></v-avatar
-                >{{ skill.name }}
-              </v-chip>
+          <v-col cols="4">
+            <div class="d-flex flex-row">
+              <div v-for="skill in project.skills" :key="skill.name">
+                <v-chip medium color="grey darken-2" class="white--text mx-1"
+                  ><v-avatar tile
+                    ><v-icon medium v-on="on" :color="skill.color">{{
+                      skill.icon
+                    }}</v-icon></v-avatar
+                  >{{ skill.name }}
+                </v-chip>
+              </div>
             </div>
           </v-col>
         </v-row>
