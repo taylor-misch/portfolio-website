@@ -34,7 +34,8 @@
               <v-tooltip bottom>
                 <template v-slot:activator="{ on }">
                   <a :href="link.url">
-                    <v-icon large v-on="on">{{ link.icon }}</v-icon>
+                    <v-icon large v-on="on" :class="link.icon"></v-icon>
+                    <!-- <v-icon large v-on="on">{{ link.icon }}</v-icon> -->
                   </a>
                 </template>
                 <span>{{ link.name }}</span>

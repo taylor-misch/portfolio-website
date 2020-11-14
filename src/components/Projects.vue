@@ -37,14 +37,14 @@ export default {
           alt: "Bytepocket - cryptocurrency wallet tracker",
           links: [
             {
-              name: "Git Repo",
+              name: "GitHub",
               url: "https://github.com/taylor-misch/bytepocket",
-              icon: "mdi-git",
+              icon: "fab fa-github",
             },
             {
               name: "Project",
               url: "https://taylor-misch.github.io/bytepocket/",
-              icon: "mdi-information",
+              icon: "mdi mdi-information",
             },
           ],
           skills: [
@@ -77,33 +77,113 @@ export default {
           summary:
             " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita odio tempore ratione nulla aspernatur suscipit odit eligendi aliquid qui quibusdam itaque ipsa quae dolor accusamus, magni amet. Optio libero voluptatem eveniet eum maxime adipisci modi ratione nam iusto harum, consectetur, repellat, sunt corporis quisquam magnam officia nulla laudantium amet quis dolor rerum. Ut atque deleniti odit, quia obcaecati officia omnis voluptas maiores veritatis nulla. Voluptatibus, architecto ratione alias illo vero nostrum accusamus dicta eos laboriosam at sequi error maxime aperiam quis nam dolore veniam eveniet corporis. Quasi alias eveniet officia rerum pariatur explicabo similique, minima vel animi, fugit tenetur.",
         },
-        // {
-        //   name: "SoundScript",
-        //   logo: "soundscript.png",
-        //   url: "https://soundscript.netlify.com/",
-        //   iconLink: "https://github.com/taylor-misch/soundscript",
-        //   icon: "fab fa-github",
-        //   alt: "SoundScript - a coding language for music",
-        //   label: "SoundScript's GitHub",
-        // },
-        // {
-        //   name: "Portfolio Website",
-        //   logo: "portfolio.png",
-        //   url: "https://taylormisch.com",
-        //   iconLink: "https://github.com/taylor-misch/portfolio-website",
-        //   icon: "fab fa-github",
-        //   alt: "Where I show off and talk about myself",
-        //   label: "Portfolio Website's GitHub",
-        // },
-        // {
-        //   name: "Bass Build Project",
-        //   logo: "bass.png",
-        //   url: "https://imgur.com/a/3g41wKj",
-        //   iconLink: "https://imgur.com/a/3g41wKj",
-        //   icon: "fas fa-info-circle",
-        //   alt: "Misch No. 1",
-        //   label: "Bass Build Imgur Album",
-        // },
+        {
+          name: "SoundScript",
+          logo: "soundscript.png",
+          alt: "SoundScript - a coding language for music",
+          links: [
+            {
+              name: "GitHub",
+              url: "https://github.com/taylor-misch/soundscript",
+              icon: "fab fa-github",
+            },
+            {
+              name: "Project",
+              url: "https://soundscript.netlify.com/",
+              icon: "mdi mdi-information",
+            },
+          ],
+          skills: [
+            {
+              name: "Vue.js",
+              icon: "mdi-vuejs",
+              color: "green",
+            },
+            {
+              name: "Vuetify",
+              icon: "mdi-vuetify",
+              color: "blue lighten-2",
+            },
+            {
+              name: "HTML",
+              icon: "mdi-language-html5",
+              color: "orange",
+            },
+            {
+              name: "CSS",
+              icon: "mdi-language-css3",
+              color: "blue darken-1",
+            },
+            {
+              name: "JavaScript",
+              icon: "mdi-language-javascript",
+              color: "yellow darken-1",
+            },
+          ],
+          summary:
+            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita odio tempore ratione nulla aspernatur suscipit odit eligendi aliquid qui quibusdam itaque ipsa quae dolor accusamus, magni amet. Optio libero voluptatem eveniet eum maxime adipisci modi ratione nam iusto harum, consectetur, repellat, sunt corporis quisquam magnam officia nulla laudantium amet quis dolor rerum. Ut atque deleniti odit, quia obcaecati officia omnis voluptas maiores veritatis nulla. Voluptatibus, architecto ratione alias illo vero nostrum accusamus dicta eos laboriosam at sequi error maxime aperiam quis nam dolore veniam eveniet corporis. Quasi alias eveniet officia rerum pariatur explicabo similique, minima vel animi, fugit tenetur.",
+        },
+        {
+          name: "Portfolio Website",
+          logo: "portfolio.png",
+          alt: "Where I show off and talk about myself",
+          links: [
+            {
+              name: "GitHub",
+              url: "https://github.com/taylor-misch/portfolio-website",
+              icon: "fab fa-github",
+            },
+            {
+              name: "Project",
+              url: "https://taylormisch.com",
+              icon: "mdi mdi-information",
+            },
+          ],
+          skills: [
+            {
+              name: "Vue.js",
+              icon: "mdi-vuejs",
+              color: "green",
+            },
+            {
+              name: "Vuetify",
+              icon: "mdi-vuetify",
+              color: "blue lighten-2",
+            },
+            {
+              name: "HTML",
+              icon: "mdi-language-html5",
+              color: "orange",
+            },
+            {
+              name: "CSS",
+              icon: "mdi-language-css3",
+              color: "blue darken-1",
+            },
+            {
+              name: "JavaScript",
+              icon: "mdi-language-javascript",
+              color: "yellow darken-1",
+            },
+          ],
+          summary:
+            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita odio tempore ratione nulla aspernatur suscipit odit eligendi aliquid qui quibusdam itaque ipsa quae dolor accusamus, magni amet. Optio libero voluptatem eveniet eum maxime adipisci modi ratione nam iusto harum, consectetur, repellat, sunt corporis quisquam magnam officia nulla laudantium amet quis dolor rerum. Ut atque deleniti odit, quia obcaecati officia omnis voluptas maiores veritatis nulla. Voluptatibus, architecto ratione alias illo vero nostrum accusamus dicta eos laboriosam at sequi error maxime aperiam quis nam dolore veniam eveniet corporis. Quasi alias eveniet officia rerum pariatur explicabo similique, minima vel animi, fugit tenetur.",
+        },
+        {
+          name: "Bass Build Project",
+          logo: "bass.png",
+          alt: "Misch No. 1",
+          links: [
+            {
+              name: "Project",
+              url: "https://imgur.com/a/3g41wKj",
+              icon: "mdi mdi-information",
+            },
+          ],
+          skills: [],
+          summary:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita odio tempore ratione nulla aspernatur suscipit odit eligendi aliquid qui quibusdam itaque ipsa quae dolor accusamus, magni amet. Optio libero voluptatem eveniet eum maxime adipisci modi ratione nam iusto harum, consectetur, repellat, sunt corporis quisquam magnam officia nulla laudantium amet quis dolor rerum. Ut atque deleniti odit, quia obcaecati officia omnis voluptas maiores veritatis nulla. Voluptatibus, architecto ratione alias illo vero nostrum accusamus dicta eos laboriosam at sequi error maxime aperiam quis nam dolore veniam eveniet corporis. Quasi alias eveniet officia rerum pariatur explicabo similique, minima vel animi, fugit tenetur.",
+        },
       ],
     };
   },
