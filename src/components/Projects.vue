@@ -50,27 +50,27 @@ export default {
           skills: [
             {
               name: "Vue.js",
-              icon: "mdi-vuejs",
+              icon: "mdi mdi-vuejs",
               color: "green",
             },
             {
               name: "Vuetify",
-              icon: "mdi-vuetify",
+              icon: "mdi mdi-vuetify",
               color: "blue lighten-2",
             },
             {
               name: "HTML",
-              icon: "mdi-language-html5",
+              icon: "mdi mdi-language-html5",
               color: "orange",
             },
             {
               name: "CSS",
-              icon: "mdi-language-css3",
+              icon: "mdi mdi-language-css3",
               color: "blue darken-1",
             },
             {
               name: "JavaScript",
-              icon: "mdi-language-javascript",
+              icon: "mdi mdi-language-javascript",
               color: "yellow darken-1",
             },
           ],
@@ -96,27 +96,27 @@ export default {
           skills: [
             {
               name: "Vue.js",
-              icon: "mdi-vuejs",
+              icon: "mdi mdi-vuejs",
               color: "green",
             },
             {
               name: "Vuetify",
-              icon: "mdi-vuetify",
+              icon: "mdi mdi-vuetify",
               color: "blue lighten-2",
             },
             {
               name: "HTML",
-              icon: "mdi-language-html5",
+              icon: "mdi mdi-language-html5",
               color: "orange",
             },
             {
               name: "CSS",
-              icon: "mdi-language-css3",
+              icon: "mdi mdi-language-css3",
               color: "blue darken-1",
             },
             {
               name: "JavaScript",
-              icon: "mdi-language-javascript",
+              icon: "mdi mdi-language-javascript",
               color: "yellow darken-1",
             },
           ],
@@ -142,27 +142,27 @@ export default {
           skills: [
             {
               name: "Vue.js",
-              icon: "mdi-vuejs",
+              icon: "mdi mdi-vuejs",
               color: "green",
             },
             {
               name: "Vuetify",
-              icon: "mdi-vuetify",
+              icon: "mdi mdi-vuetify",
               color: "blue lighten-2",
             },
             {
               name: "HTML",
-              icon: "mdi-language-html5",
+              icon: "mdi mdi-language-html5",
               color: "orange",
             },
             {
               name: "CSS",
-              icon: "mdi-language-css3",
+              icon: "mdi mdi-language-css3",
               color: "blue darken-1",
             },
             {
               name: "JavaScript",
-              icon: "mdi-language-javascript",
+              icon: "mdi mdi-language-javascript",
               color: "yellow darken-1",
             },
           ],

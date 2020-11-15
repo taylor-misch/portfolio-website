@@ -6,6 +6,14 @@
       </div>
     </template>
     <v-card color="grey lighten-3" class="remove-scroll rounded-lg">
+      <v-system-bar color="rgba(0, 0, 0, 0)">
+        <v-spacer></v-spacer>
+        <v-icon
+          large
+          @click="dialog = false"
+          class="pt-3 mdi mdi-close"
+        ></v-icon>
+      </v-system-bar>
       <v-row class="justify-center">
         <v-col cols="5" sm="4" md="3">
           <v-img
@@ -35,7 +43,6 @@
                 <template v-slot:activator="{ on }">
                   <a :href="link.url">
                     <v-icon large v-on="on" :class="link.icon"></v-icon>
-                    <!-- <v-icon large v-on="on">{{ link.icon }}</v-icon> -->
                   </a>
                 </template>
                 <span>{{ link.name }}</span>
@@ -50,9 +57,13 @@
               <div v-for="skill in project.skills" :key="skill.name">
                 <v-chip medium color="grey darken-2" class="white--text mx-1"
                   ><v-avatar tile
-                    ><v-icon medium v-on="on" :color="skill.color">{{
-                      skill.icon
-                    }}</v-icon></v-avatar
+                    ><v-icon
+                      medium
+                      v-on="on"
+                      :color="skill.color"
+                      :class="skill.icon"
+                    >
+                    </v-icon></v-avatar
                   >{{ skill.name }}
                 </v-chip>
               </div>
