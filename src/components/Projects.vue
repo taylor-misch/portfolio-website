@@ -37,12 +37,12 @@ export default {
           alt: "Bytepocket - cryptocurrency wallet tracker",
           links: [
             {
-              name: "GitHub",
+              name: "GitHub Repo",
               url: "https://github.com/taylor-misch/bytepocket",
               icon: "fab fa-github",
             },
             {
-              name: "Project",
+              name: "Project Page",
               url: "https://taylor-misch.github.io/bytepocket/",
               icon: "mdi mdi-information",
             },
@@ -66,7 +66,7 @@ export default {
             {
               name: "CSS",
               icon: "mdi mdi-language-css3",
-              color: "blue darken-1",
+              color: "blue lighten-1",
             },
             {
               name: "JavaScript",

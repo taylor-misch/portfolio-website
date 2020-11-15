@@ -5,7 +5,7 @@
         <ProjectCard :project="project"> </ProjectCard>
       </div>
     </template>
-    <v-card color="grey lighten-3" class="remove-scroll rounded-lg">
+    <v-card color="grey lighten-2" class="remove-scroll rounded-lg">
       <v-system-bar color="rgba(0, 0, 0, 0)">
         <v-spacer></v-spacer>
         <v-icon
@@ -14,74 +14,77 @@
           class="pt-3 mdi mdi-close"
         ></v-icon>
       </v-system-bar>
-      <v-row class="justify-center">
-        <v-col cols="5" sm="4" md="3">
-          <v-img
-            :src="require('@/assets/projects/' + project.logo)"
-            class="rounded-xl"
-          ></v-img>
-        </v-col>
-        <!-- <v-col cols="3" sm="1" class="clickable">
-          <v-icon
-            large
-            @click="dialog = false"
-            class="mx-3 far fa-window-close"
-          >
-          </v-icon>
-        </v-col> -->
+      <v-row class="text-center">
+        <v-col class="text-h4 font-weight-bold red--text text--darken-4">{{
+          project.name
+        }}</v-col>
       </v-row>
-      <v-card-text>
-        <v-row class="text-center">
-          <v-col cols="4"><h2>Links:</h2></v-col>
-          <v-col cols="4"><h2>Name:</h2></v-col>
-          <v-col cols="4"><h2>Skills:</h2></v-col>
-        </v-row>
-        <v-row align="start" justify="center">
-          <v-col cols="4" class="d-flex flex-row">
-            <div v-for="link in project.links" :key="link.name">
-              <v-tooltip bottom>
-                <template v-slot:activator="{ on }">
-                  <a :href="link.url">
-                    <v-icon large v-on="on" :class="link.icon"></v-icon>
-                  </a>
-                </template>
-                <span>{{ link.name }}</span>
-              </v-tooltip>
-            </div>
-          </v-col>
-          <v-col cols="4" class="text-center">
-            <h3>{{ project.name }}</h3>
-          </v-col>
-          <v-col cols="4">
-            <div class="d-flex flex-row">
+      <v-row class="mx-2">
+        <v-col cols="12" md="6">
+          <v-row class="flex flex-column justify-center">
+            <v-col class="text-h5 font-weight-bold red--text text--darken-4"
+              >Skills:</v-col
+            >
+            <v-col class="d-flex flex-row flex-wrap">
               <div v-for="skill in project.skills" :key="skill.name">
-                <v-chip medium color="grey darken-2" class="white--text mx-1"
-                  ><v-avatar tile
-                    ><v-icon
+                <v-chip medium color="grey darken-2" class="white--text ma-1">
+                  <v-avatar tile class="mr-1">
+                    <v-icon
                       medium
                       v-on="on"
                       :color="skill.color"
                       :class="skill.icon"
-                    >
-                    </v-icon></v-avatar
-                  >{{ skill.name }}
+                    ></v-icon>
+                  </v-avatar>
+                  {{ skill.name }}
                 </v-chip>
               </div>
-            </div>
-          </v-col>
-        </v-row>
-        <v-row>
-          <b>Summary:</b>
-          <br />
-          {{ project.summary }}
-        </v-row>
-        <!-- <ul>
-          <li><b>Project Name:</b> {{ project.name }}</li>
-          <li><b>Project URL:</b><a :href="project.url">Visit</a></li>
-          <li><b>Built With:</b> {{ project.label }}</li>
-          <li><b>Project Description:</b> {{ project.alt }}</li>
-        </ul> -->
-      </v-card-text>
+            </v-col>
+            <v-col class="text-h5 font-weight-bold red--text text--darken-4"
+              >Links:</v-col
+            >
+            <v-col class="d-flex flex-row flex-wrap">
+              <div v-for="link in project.links" :key="link.name">
+                <v-chip
+                  large
+                  label
+                  link
+                  :href="link.url"
+                  medium
+                  color="blue darken-3"
+                  class="white--text ma-1"
+                >
+                  <v-icon large v-on="on" class="mr-2" :class="link.icon">
+                  </v-icon>
+                  {{ link.name }}
+                </v-chip>
+              </div>
+            </v-col>
+          </v-row>
+        </v-col>
+        <v-col cols="12" sm="6">
+          <v-row class="justify-center">
+            <v-col cols="10">
+              <v-img
+                :src="require('@/assets/projects/' + project.logo)"
+                class="rounded-xl"
+              ></v-img>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+      <v-row class="mx-2">
+        <v-col>
+          <v-row class="flex flex-column">
+            <v-col class="text-h5 font-weight-bold red--text text--darken-4">
+              Summary :
+            </v-col>
+            <v-col>
+              {{ project.summary }}
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
     </v-card>
   </v-dialog>
 </template>
