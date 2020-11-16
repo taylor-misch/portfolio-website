@@ -10,7 +10,6 @@
         :key="project.name"
       >
         <ProjectDialog :project="project"> </ProjectDialog>
-        <!-- <ProjectCard :project="project"></ProjectCard> -->
       </v-col>
     </v-row>
   </Module>
@@ -19,13 +18,11 @@
 <script>
 import Module from "@/components/layout/Module";
 import ProjectDialog from "@/components/ProjectDialog";
-// import ProjectCard from "@/components/ProjectCard";
 
 export default {
   components: {
     Module,
     ProjectDialog,
-    // ProjectCard,
   },
   data() {
     return {
@@ -42,8 +39,44 @@ export default {
               icon: "fab fa-github",
             },
             {
-              name: "Project Page",
+              name: "Bytepocket Website",
               url: "https://taylor-misch.github.io/bytepocket/",
+              icon: "mdi mdi-information",
+            },
+          ],
+          skills: [
+            {
+              name: "HTML",
+              icon: "mdi mdi-language-html5",
+              color: "orange",
+            },
+            {
+              name: "CSS",
+              icon: "mdi mdi-language-css3",
+              color: "blue lighten-1",
+            },
+            {
+              name: "JavaScript",
+              icon: "mdi mdi-language-javascript",
+              color: "yellow darken-1",
+            },
+          ],
+          summary:
+            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita odio tempore ratione nulla aspernatur suscipit odit eligendi aliquid qui quibusdam itaque ipsa quae dolor accusamus, magni amet. Optio libero voluptatem eveniet eum maxime adipisci modi ratione nam iusto harum, consectetur, repellat, sunt corporis quisquam magnam officia nulla laudantium amet quis dolor rerum. Ut atque deleniti odit, quia obcaecati officia omnis voluptas maiores veritatis nulla. Voluptatibus, architecto ratione alias illo vero nostrum accusamus dicta eos laboriosam at sequi error maxime aperiam quis nam dolore veniam eveniet corporis. Quasi alias eveniet officia rerum pariatur explicabo similique, minima vel animi, fugit tenetur.",
+        },
+        {
+          name: "SoundScript",
+          logo: "soundscript.png",
+          alt: "SoundScript - a coding language for music",
+          links: [
+            {
+              name: "GitHub Repo",
+              url: "https://github.com/taylor-misch/soundscript",
+              icon: "fab fa-github",
+            },
+            {
+              name: "SoundScript Website",
+              url: "https://soundscript.netlify.com/",
               icon: "mdi mdi-information",
             },
           ],
@@ -78,63 +111,17 @@ export default {
             " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita odio tempore ratione nulla aspernatur suscipit odit eligendi aliquid qui quibusdam itaque ipsa quae dolor accusamus, magni amet. Optio libero voluptatem eveniet eum maxime adipisci modi ratione nam iusto harum, consectetur, repellat, sunt corporis quisquam magnam officia nulla laudantium amet quis dolor rerum. Ut atque deleniti odit, quia obcaecati officia omnis voluptas maiores veritatis nulla. Voluptatibus, architecto ratione alias illo vero nostrum accusamus dicta eos laboriosam at sequi error maxime aperiam quis nam dolore veniam eveniet corporis. Quasi alias eveniet officia rerum pariatur explicabo similique, minima vel animi, fugit tenetur.",
         },
         {
-          name: "SoundScript",
-          logo: "soundscript.png",
-          alt: "SoundScript - a coding language for music",
-          links: [
-            {
-              name: "GitHub",
-              url: "https://github.com/taylor-misch/soundscript",
-              icon: "fab fa-github",
-            },
-            {
-              name: "Project",
-              url: "https://soundscript.netlify.com/",
-              icon: "mdi mdi-information",
-            },
-          ],
-          skills: [
-            {
-              name: "Vue.js",
-              icon: "mdi mdi-vuejs",
-              color: "green",
-            },
-            {
-              name: "Vuetify",
-              icon: "mdi mdi-vuetify",
-              color: "blue lighten-2",
-            },
-            {
-              name: "HTML",
-              icon: "mdi mdi-language-html5",
-              color: "orange",
-            },
-            {
-              name: "CSS",
-              icon: "mdi mdi-language-css3",
-              color: "blue darken-1",
-            },
-            {
-              name: "JavaScript",
-              icon: "mdi mdi-language-javascript",
-              color: "yellow darken-1",
-            },
-          ],
-          summary:
-            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita odio tempore ratione nulla aspernatur suscipit odit eligendi aliquid qui quibusdam itaque ipsa quae dolor accusamus, magni amet. Optio libero voluptatem eveniet eum maxime adipisci modi ratione nam iusto harum, consectetur, repellat, sunt corporis quisquam magnam officia nulla laudantium amet quis dolor rerum. Ut atque deleniti odit, quia obcaecati officia omnis voluptas maiores veritatis nulla. Voluptatibus, architecto ratione alias illo vero nostrum accusamus dicta eos laboriosam at sequi error maxime aperiam quis nam dolore veniam eveniet corporis. Quasi alias eveniet officia rerum pariatur explicabo similique, minima vel animi, fugit tenetur.",
-        },
-        {
           name: "Portfolio Website",
           logo: "portfolio.png",
           alt: "Where I show off and talk about myself",
           links: [
             {
-              name: "GitHub",
+              name: "GitHub Repo",
               url: "https://github.com/taylor-misch/portfolio-website",
               icon: "fab fa-github",
             },
             {
-              name: "Project",
+              name: "Portfolio Website",
               url: "https://taylormisch.com",
               icon: "mdi mdi-information",
             },
@@ -158,7 +145,7 @@ export default {
             {
               name: "CSS",
               icon: "mdi mdi-language-css3",
-              color: "blue darken-1",
+              color: "blue lighten-1",
             },
             {
               name: "JavaScript",
@@ -175,7 +162,7 @@ export default {
           alt: "Misch No. 1",
           links: [
             {
-              name: "Project",
+              name: "Imgur Page",
               url: "https://imgur.com/a/3g41wKj",
               icon: "mdi mdi-information",
             },
