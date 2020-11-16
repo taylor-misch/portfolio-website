@@ -5,12 +5,27 @@
         <ProjectCard :project="project"> </ProjectCard>
       </div>
     </template>
-    <div v-if="project.skills.length > 0">
-      <TechProjectDialogCard :project="project"></TechProjectDialogCard>
-    </div>
-    <div v-else>
-      <NonTechProjectDialogCard :project="project"></NonTechProjectDialogCard>
-    </div>
+    <v-card color="grey lighten-2" class="remove-scroll rounded-lg">
+      <v-system-bar color="rgba(0, 0, 0, 0)">
+        <v-spacer></v-spacer>
+        <v-icon
+          large
+          @click="dialog = false"
+          class="pt-3 mdi mdi-close"
+        ></v-icon>
+      </v-system-bar>
+      <v-row no-gutters class="text-center">
+        <v-col class="text-h4 font-weight-bold red--text text--darken-4">{{
+          project.name
+        }}</v-col>
+      </v-row>
+      <div v-if="project.skills.length > 0">
+        <TechProjectDialogCard :project="project"></TechProjectDialogCard>
+      </div>
+      <div v-else>
+        <NonTechProjectDialogCard :project="project"></NonTechProjectDialogCard>
+      </div>
+    </v-card>
   </v-dialog>
 </template>
 

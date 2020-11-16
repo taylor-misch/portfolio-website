@@ -1,27 +1,32 @@
 <template>
-  <v-card color="grey lighten-2" class="remove-scroll rounded-lg">
-    <v-system-bar color="rgba(0, 0, 0, 0)">
-      <v-spacer></v-spacer>
-      <v-icon large @click="dialog = false" class="pt-3 mdi mdi-close"></v-icon>
-    </v-system-bar>
-    <v-row no-gutters class="text-center">
-      <v-col class="text-h4 font-weight-bold red--text text--darken-4">{{
-        project.name
-      }}</v-col>
-    </v-row>
+  <div>
     <v-row dense class="mx-2">
       <v-col cols="12" md="6">
+        <v-row class="justify-center">
+          <v-col cols="8" sm="5" md="8">
+            <v-img
+              :src="require('@/assets/projects/' + project.logo)"
+              class="rounded-xl"
+            ></v-img>
+          </v-col>
+        </v-row>
+      </v-col>
+      <v-col cols="12" md="6">
         <v-row class="flex flex-column justify-center">
-          <v-col class="text-h5 font-weight-bold red--text text--darken-4"
+          <v-col
+            :class="$vuetify.breakpoint.smAndDown ? 'text-center' : ''"
+            class="text-h5 font-weight-bold red--text text--darken-4"
             >Skills:</v-col
           >
-          <v-col class="d-flex flex-row flex-wrap">
+          <v-col
+            :class="$vuetify.breakpoint.smAndDown ? 'justify-center' : ''"
+            class="d-flex flex-row flex-wrap"
+          >
             <div v-for="skill in project.skills" :key="skill.name">
               <v-chip medium color="grey darken-2" class="white--text ma-1">
                 <v-avatar tile class="mr-1">
                   <v-icon
                     medium
-                    v-on="on"
                     :color="skill.color"
                     :class="skill.icon"
                   ></v-icon>
@@ -30,52 +35,38 @@
               </v-chip>
             </div>
           </v-col>
-          <v-col class="text-h5 font-weight-bold red--text text--darken-4"
+          <v-col
+            :class="$vuetify.breakpoint.smAndDown ? 'text-center' : ''"
+            class="text-h5 font-weight-bold red--text text--darken-4"
             >Links:</v-col
           >
-          <v-col class="d-flex flex-row flex-wrap">
+          <v-col
+            :class="$vuetify.breakpoint.smAndDown ? 'justify-center' : ''"
+            class="d-flex flex-row flex-wrap"
+          >
             <div v-for="link in project.links" :key="link.name">
               <v-chip
                 large
                 label
                 link
                 :href="link.url"
-                medium
                 color="blue darken-3"
                 class="white--text ma-1"
               >
-                <v-icon large v-on="on" class="mr-2" :class="link.icon">
-                </v-icon>
+                <v-icon large class="mr-2" :class="link.icon"> </v-icon>
                 {{ link.name }}
               </v-chip>
             </div>
           </v-col>
         </v-row>
       </v-col>
-      <v-col cols="12" sm="6">
-        <v-row class="justify-center">
-          <v-col cols="8">
-            <v-img
-              :src="require('@/assets/projects/' + project.logo)"
-              class="rounded-xl"
-            ></v-img>
-          </v-col>
-        </v-row>
-      </v-col>
     </v-row>
-    <v-row dense class="mx-2">
+    <v-row class="ma-3 text-justify">
       <v-col>
-        <v-row class="flex flex-column">
-          <v-col class="text-h5 font-weight-bold red--text text--darken-4">
-            Summary :
-          </v-col>
-          <v-col>
-            {{ project.summary }}
-          </v-col>
-        </v-row>
+        {{ project.summary }}
       </v-col>
     </v-row>
-  </v-card>
+  </div>
 </template>
 
 <script>
