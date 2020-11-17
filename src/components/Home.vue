@@ -37,6 +37,7 @@
               </template>
               <span>GitHub</span>
             </v-tooltip>
+
             <!-- TODO - update mail icon to be a resume download icon -->
             <v-tooltip right>
               <template v-slot:activator="{ on }">
@@ -89,9 +90,6 @@ export default {
   background-attachment: fixed;
   background-image: url("../assets/background.jpg");
   height: 100vh;
-}
-a {
-  text-decoration: none;
 }
 .new-font {
   font-family: "Lexend Deca", sans-serif;

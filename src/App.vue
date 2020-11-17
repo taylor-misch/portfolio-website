@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <NavBar />
-    <v-main class="blue lighten-4">
+    <v-main class="grey lighten-1">
       <Home />
       <About />
       <Experience />
@@ -39,5 +39,8 @@ export default {
 </script>
 
 <style>
+a {
+  text-decoration: none;
+}
 </style>
 

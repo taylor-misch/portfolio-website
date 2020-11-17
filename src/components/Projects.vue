@@ -9,49 +9,7 @@
         v-for="project in projects"
         :key="project.name"
       >
-        <v-card color="grey lighten-4" class="text-xs-center ma-3">
-          <v-responsive>
-            <v-tooltip top color="black">
-              <template v-slot:activator="{ on }">
-                <a :href="project.url">
-                  <v-img
-                    :src="require('@/assets/projects/' + project.logo)"
-                    aspect-ratio="1"
-                    :alt="project.alt"
-                    v-on="on"
-                  ></v-img>
-                </a>
-              </template>
-              <span>{{ project.alt }}</span>
-            </v-tooltip>
-          </v-responsive>
-
-          <v-card-text
-            class="text-center grey--text text--darken-3 font-weight-medium body-1"
-          >
-            <a :href="project.url">
-              <h3 v-if="$vuetify.breakpoint.mdAndUp">{{ project.name }}</h3>
-              <h4 v-else>{{ project.name }}</h4>
-            </a>
-          </v-card-text>
-          <v-card-actions>
-            <v-layout class="mb-1 justify-center">
-              <v-tooltip bottom color="black">
-                <template v-slot:activator="{ on }">
-                  <a :href="project.iconLink">
-                    <v-icon
-                      x-large
-                      color="black"
-                      v-on="on"
-                      :class="project.icon"
-                    ></v-icon>
-                  </a>
-                </template>
-                <span>{{ project.label }}</span>
-              </v-tooltip>
-            </v-layout>
-          </v-card-actions>
-        </v-card>
+        <ProjectDialog :project="project"> </ProjectDialog>
       </v-col>
     </v-row>
   </Module>
@@ -59,62 +17,162 @@
 
 <script>
 import Module from "@/components/layout/Module";
+import ProjectDialog from "@/components/ProjectDialog";
+
 export default {
   components: {
     Module,
+    ProjectDialog,
   },
   data() {
     return {
+      dialog: false,
       projects: [
         {
           name: "Bytepocket",
           logo: "bytepocket.jpg",
           url: "https://taylor-misch.github.io/bytepocket/",
-          iconLink: "https://github.com/taylor-misch/bytepocket",
-          icon: "fab fa-github",
-          alt: "Bytepocket - cryptocurrency wallet tracker",
-          label: "Bytepocket's GitHub",
+          links: [
+            {
+              name: "GitHub Repo",
+              url: "https://github.com/taylor-misch/bytepocket",
+              icon: "fab fa-github",
+            },
+            {
+              name: "Bytepocket Website",
+              url: "https://taylor-misch.github.io/bytepocket/",
+              icon: "mdi mdi-information",
+            },
+          ],
+          skills: [
+            {
+              name: "HTML",
+              icon: "mdi mdi-language-html5",
+              color: "orange",
+            },
+            {
+              name: "CSS",
+              icon: "mdi mdi-language-css3",
+              color: "blue lighten-1",
+            },
+            {
+              name: "JavaScript",
+              icon: "mdi mdi-language-javascript",
+              color: "yellow darken-1",
+            },
+          ],
+          summary:
+            "Bytepocket allows you to enter the public address for any supported cryptocurrency account and see that wallet's current value in both its cryptocurrency and USD. Currently, the site supports three of the most popular crytocurrencies: Bitcoin (BTC), Etherium (ETH), and Ripple (XRP). Bytepocket consumes both BlockCypher and Cryptonator's APIs to provide accurate wallet values and conversions based on current cyrptocurrency prices. This site was created as an entry to the 2018 MinneHacks Hackathon at the University of Minnesota Twin Cities. I, along with my team, built Bytepocket within the 24-hour competition period and presented it to judges and other Hackathon participants.",
         },
         {
           name: "SoundScript",
           logo: "soundscript.png",
           url: "https://soundscript.netlify.com/",
-          iconLink: "https://github.com/taylor-misch/soundscript",
-          icon: "fab fa-github",
-          alt: "SoundScript - a coding language for music",
-          label: "SoundScript's GitHub",
+          links: [
+            {
+              name: "GitHub Repo",
+              url: "https://github.com/taylor-misch/soundscript",
+              icon: "fab fa-github",
+            },
+            {
+              name: "SoundScript Website",
+              url: "https://soundscript.netlify.com/",
+              icon: "mdi mdi-information",
+            },
+          ],
+          skills: [
+            {
+              name: "Vue.js",
+              icon: "mdi mdi-vuejs",
+              color: "green",
+            },
+            {
+              name: "Vuetify",
+              icon: "mdi mdi-vuetify",
+              color: "blue lighten-2",
+            },
+            {
+              name: "HTML",
+              icon: "mdi mdi-language-html5",
+              color: "orange",
+            },
+            {
+              name: "CSS",
+              icon: "mdi mdi-language-css3",
+              color: "blue lighten-1",
+            },
+            {
+              name: "JavaScript",
+              icon: "mdi mdi-language-javascript",
+              color: "yellow darken-1",
+            },
+          ],
+          summary:
+            "SoundScript is both a language and a online sandbox that allows you to write code that makes music. SoundScript is built on top of JavaScript and uses common coding conventions like variables and methods as well as logic operators like loops and if statements to allow users to code short music 'programs'. The language was initially created in 2018 as a part of my Programming Languages class at the University of Wisconsin - Eau Claire. Later in 2019, I created the SoundScript website to provide more documentation and examples of what the SoundScript language is capable of.",
         },
         {
           name: "Portfolio Website",
           logo: "portfolio.png",
           url: "https://taylormisch.com",
-          iconLink: "https://github.com/taylor-misch/portfolio-website",
-          icon: "fab fa-github",
-          alt: "Where I show off and talk about myself",
-          label: "Portfolio Website's GitHub",
+          links: [
+            {
+              name: "GitHub Repo",
+              url: "https://github.com/taylor-misch/portfolio-website",
+              icon: "fab fa-github",
+            },
+            {
+              name: "Portfolio Website",
+              url: "https://taylormisch.com",
+              icon: "mdi mdi-information",
+            },
+          ],
+          skills: [
+            {
+              name: "Vue.js",
+              icon: "mdi mdi-vuejs",
+              color: "green",
+            },
+            {
+              name: "Vuetify",
+              icon: "mdi mdi-vuetify",
+              color: "blue lighten-2",
+            },
+            {
+              name: "HTML",
+              icon: "mdi mdi-language-html5",
+              color: "orange",
+            },
+            {
+              name: "CSS",
+              icon: "mdi mdi-language-css3",
+              color: "blue lighten-1",
+            },
+            {
+              name: "JavaScript",
+              icon: "mdi mdi-language-javascript",
+              color: "yellow darken-1",
+            },
+          ],
+          summary:
+            "Taylormisch.com is the website you are currently on. This portfolio website acts as my 'live' resume and is where I post my professional expereinces, projects I have worked on in the past, as well as my interests and hobbies. Taylormisch.com is ever-evolving. Originally designed and developed in summer 2019, I continually update it and add more experiences, pictures, and projects over time. Feel free to continue looking around or contact me if you have any specific questions.",
         },
         {
           name: "Bass Build Project",
           logo: "bass.png",
           url: "https://imgur.com/a/3g41wKj",
-          iconLink: "https://imgur.com/a/3g41wKj",
-          icon: "fas fa-info-circle",
-          alt: "Misch No. 1",
-          label: "Bass Build Imgur Album",
+          links: [
+            {
+              name: "Imgur Page",
+              url: "https://imgur.com/a/3g41wKj",
+              icon: "mdi mdi-information",
+            },
+          ],
+          skills: [],
+          summary:
+            "In 2017, after almost a decade of playing 6-string guitar, I started to have interest in exploring the bass guitar. I looked around for potential bass guitars to purchase but eventually settled on purchasing an electric bass guitar kit that I could build and paint myself. With school and internships, it wasn't until winter break (2018) that I got around to finally putting the bass guitar together. Over the course of a month I sanded the body, shaped the headstock, applied the primer and paint coats, added and polished the clear coat lacquer, and wired up the bass guitar. This was an awesome DIY project, and I hope to do it again someday by building a 6-string electric guitar. Check out the Imgur page for the project to see the guitar come together over time.",
         },
       ],
     };
   },
 };
 </script>
-
-<style scoped>
-a,
-a:visited,
-a:link,
-a:hover,
-a:active {
-  text-decoration: inherit;
-  color: inherit;
-}
-</style>
