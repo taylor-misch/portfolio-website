@@ -1,11 +1,13 @@
 <template>
   <div>
     <v-row class="justify-center">
-      <v-col cols="6" sm="5" md="4">
-        <v-img
-          :src="require('@/assets/projects/' + project.logo)"
-          class="rounded-xl"
-        ></v-img>
+      <v-col cols="8" sm="5" md="4">
+        <a :href="project.url">
+          <v-img
+            :src="require('@/assets/projects/' + project.logo)"
+            class="rounded-xl"
+          ></v-img>
+        </a>
       </v-col>
     </v-row>
     <v-row no-gutters class="flex flex-column justify-center text-center">

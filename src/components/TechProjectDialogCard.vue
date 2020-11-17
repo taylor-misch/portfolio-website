@@ -4,10 +4,12 @@
       <v-col cols="12" md="6">
         <v-row class="justify-center">
           <v-col cols="8" sm="5" md="8">
-            <v-img
-              :src="require('@/assets/projects/' + project.logo)"
-              class="rounded-xl"
-            ></v-img>
+            <a :href="project.url">
+              <v-img
+                :src="require('@/assets/projects/' + project.logo)"
+                class="rounded-xl"
+              ></v-img>
+            </a>
           </v-col>
         </v-row>
       </v-col>

@@ -31,7 +31,7 @@ export default {
         {
           name: "Bytepocket",
           logo: "bytepocket.jpg",
-          alt: "Bytepocket - cryptocurrency wallet tracker",
+          url: "https://taylor-misch.github.io/bytepocket/",
           links: [
             {
               name: "GitHub Repo",
@@ -62,12 +62,12 @@ export default {
             },
           ],
           summary:
-            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita odio tempore ratione nulla aspernatur suscipit odit eligendi aliquid qui quibusdam itaque ipsa quae dolor accusamus, magni amet. Optio libero voluptatem eveniet eum maxime adipisci modi ratione nam iusto harum, consectetur, repellat, sunt corporis quisquam magnam officia nulla laudantium amet quis dolor rerum. Ut atque deleniti odit, quia obcaecati officia omnis voluptas maiores veritatis nulla. Voluptatibus, architecto ratione alias illo vero nostrum accusamus dicta eos laboriosam at sequi error maxime aperiam quis nam dolore veniam eveniet corporis. Quasi alias eveniet officia rerum pariatur explicabo similique, minima vel animi, fugit tenetur.",
+            "Bytepocket allows you to enter the public address for any supported cryptocurrency account and see that wallet's current value in both its cryptocurrency and USD. Currently, the site supports three of the most popular crytocurrencies: Bitcoin (BTC), Etherium (ETH), and Ripple (XRP). Bytepocket consumes both BlockCypher and Cryptonator's APIs to provide accurate wallet values and conversions based on current cyrptocurrency prices. This site was created as an entry to the 2018 MinneHacks Hackathon at the University of Minnesota Twin Cities. I, along with my team, built Bytepocket within the 24-hour competition period and presented it to judges and other Hackathon participants.",
         },
         {
           name: "SoundScript",
           logo: "soundscript.png",
-          alt: "SoundScript - a coding language for music",
+          url: "https://soundscript.netlify.com/",
           links: [
             {
               name: "GitHub Repo",
@@ -108,12 +108,12 @@ export default {
             },
           ],
           summary:
-            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita odio tempore ratione nulla aspernatur suscipit odit eligendi aliquid qui quibusdam itaque ipsa quae dolor accusamus, magni amet. Optio libero voluptatem eveniet eum maxime adipisci modi ratione nam iusto harum, consectetur, repellat, sunt corporis quisquam magnam officia nulla laudantium amet quis dolor rerum. Ut atque deleniti odit, quia obcaecati officia omnis voluptas maiores veritatis nulla. Voluptatibus, architecto ratione alias illo vero nostrum accusamus dicta eos laboriosam at sequi error maxime aperiam quis nam dolore veniam eveniet corporis. Quasi alias eveniet officia rerum pariatur explicabo similique, minima vel animi, fugit tenetur.",
+            "SoundScript is both a language and a online sandbox that allows you to write code that makes music. SoundScript is built on top of JavaScript and uses common coding conventions like variables and methods as well as logic operators like loops and if statements to allow users to code short music 'programs'. The language was initially created in 2018 as a part of my Programming Languages class at the University of Wisconsin - Eau Claire. Later in 2019, I created the SoundScript website to provide more documentation and examples of what the SoundScript language is capable of.",
         },
         {
           name: "Portfolio Website",
           logo: "portfolio.png",
-          alt: "Where I show off and talk about myself",
+          url: "https://taylormisch.com",
           links: [
             {
               name: "GitHub Repo",
@@ -154,12 +154,12 @@ export default {
             },
           ],
           summary:
-            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita odio tempore ratione nulla aspernatur suscipit odit eligendi aliquid qui quibusdam itaque ipsa quae dolor accusamus, magni amet. Optio libero voluptatem eveniet eum maxime adipisci modi ratione nam iusto harum, consectetur, repellat, sunt corporis quisquam magnam officia nulla laudantium amet quis dolor rerum. Ut atque deleniti odit, quia obcaecati officia omnis voluptas maiores veritatis nulla. Voluptatibus, architecto ratione alias illo vero nostrum accusamus dicta eos laboriosam at sequi error maxime aperiam quis nam dolore veniam eveniet corporis. Quasi alias eveniet officia rerum pariatur explicabo similique, minima vel animi, fugit tenetur.",
+            "Taylormisch.com is the website you are currently on. This portfolio website acts as my 'live' resume and is where I post my professional expereinces, projects I have worked on in the past, as well as my interests and hobbies. Taylormisch.com is ever-evolving. Originally designed and developed in summer 2019, I continually update it and add more experiences, pictures, and projects over time. Feel free to continue looking around or contact me if you have any specific questions.",
         },
         {
           name: "Bass Build Project",
           logo: "bass.png",
-          alt: "Misch No. 1",
+          url: "https://imgur.com/a/3g41wKj",
           links: [
             {
               name: "Imgur Page",
@@ -169,7 +169,7 @@ export default {
           ],
           skills: [],
           summary:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita odio tempore ratione nulla aspernatur suscipit odit eligendi aliquid qui quibusdam itaque ipsa quae dolor accusamus, magni amet. Optio libero voluptatem eveniet eum maxime adipisci modi ratione nam iusto harum, consectetur, repellat, sunt corporis quisquam magnam officia nulla laudantium amet quis dolor rerum. Ut atque deleniti odit, quia obcaecati officia omnis voluptas maiores veritatis nulla. Voluptatibus, architecto ratione alias illo vero nostrum accusamus dicta eos laboriosam at sequi error maxime aperiam quis nam dolore veniam eveniet corporis. Quasi alias eveniet officia rerum pariatur explicabo similique, minima vel animi, fugit tenetur.",
+            "In 2017, after almost a decade of playing 6-string guitar, I started to have interest in exploring the bass guitar. I looked around for potential bass guitars to purchase but eventually settled on purchasing an electric bass guitar kit that I could build and paint myself. With school and internships, it wasn't until winter break (2018) that I got around to finally putting the bass guitar together. Over the course of a month I sanded the body, shaped the headstock, applied the primer and paint coats, added and polished the clear coat lacquer, and wired up the bass guitar. This was an awesome DIY project, and I hope to do it again someday by building a 6-string electric guitar. Check out the Imgur page for the project to see the guitar come together over time.",
         },
       ],
     };
