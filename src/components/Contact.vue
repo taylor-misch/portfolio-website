@@ -1,56 +1,43 @@
 <template>
-  <Module id="contact">
-    <v-container>
+  <Module id="contact" title="Contact Me">
+    <v-form>
       <v-row class="justify-center">
-        <v-col cols="2" md="1" v-for="icon in icons" :key="icon.url">
-          <a :href="icon.url">
-            <v-icon large :color="icon.color" :class="icon.class">{{
-              icon.text
-            }}</v-icon>
-          </a>
+        <v-col cols="12" md="6">
+          <v-text-field
+            filled
+            background-color="white"
+            label="Name"
+            placeholder="John Doe"
+          ></v-text-field>
+        </v-col>
+        <v-col cols="12" md="6">
+          <v-text-field
+            filled
+            background-color="white"
+            label="Email"
+            placeholder="johndoe@gmail.com"
+          ></v-text-field>
         </v-col>
       </v-row>
-    </v-container>
+      <v-textarea
+        filled
+        background-color="white"
+        label="Message"
+        placeholder="Hey Taylor, love the website!"
+      ></v-textarea>
+      <v-btn color="blue">Submit</v-btn>
+    </v-form>
   </Module>
 </template>
 
 <script>
-// TODO - update contact component to be a form, this component will have to be named something else
-// TODO - check to see if the contact component is even used
 import Module from "@/components/layout/Module";
 export default {
   components: {
     Module,
   },
-  data() {
-    return {
-      icons: [
-        {
-          url: "https://linkedin.com/in/taylor-misch",
-          class: "fab fa-linkedin fa-2x",
-          text: "linkedin-box",
-          color: "blue lighten-1",
-        },
-        {
-          url: "https://github.com/taylor-misch",
-          class: "fab fa-github",
-          text: "github-box",
-          color: "amber lighten-1",
-        },
-        {
-          url: "mailto:taylormisch@gmail.com",
-          class: "",
-          text: "email",
-          color: "red lighten-1",
-        },
-      ],
-    };
-  },
+  data() {},
 };
 </script>
 
-<style scoped>
-a {
-  text-decoration: none;
-}
-</style>
+<style scoped></style>
