@@ -6,6 +6,7 @@
           <v-row dense class="flex flex-column justify-center">
             <v-col cols="12">
               <v-text-field
+                v-model="params.fromName"
                 filled
                 background-color="white"
                 label="Name"
@@ -14,6 +15,7 @@
             </v-col>
             <v-col cols="12">
               <v-text-field
+                v-model="params.replyEmail"
                 filled
                 background-color="white"
                 label="Email"
@@ -26,7 +28,7 @@
           <v-row dense class="flex flex-column justify-center">
             <v-col cols="12">
               <v-textarea
-                v-model="message"
+                v-model="params.message"
                 filled
                 background-color="white"
                 label="Message"
@@ -36,7 +38,6 @@
           </v-row>
         </v-col>
       </v-row>
-
       <v-btn color="blue" @click="sendEmail">Submit</v-btn>
     </v-form>
   </Module>
@@ -44,16 +45,41 @@
 
 <script>
 import Module from "@/components/layout/Module";
+import emailjs from "emailjs-com";
+
 export default {
   components: {
     Module,
   },
-  data: () => ({
-    message: "",
-  }),
+  data() {
+    return {
+      params: {
+        message: "",
+        toName: "Taylor",
+        fromName: "",
+        replyEmail: "",
+      },
+    };
+  },
   methods: {
-    sendEmail() {
-      console.log(this.message);
+    sendEmail: function () {
+      emailjs
+        .send(
+          process.env.VUE_APP_EMAILJS_SERVICE_ID,
+          process.env.VUE_APP_EMAILJS_TEMPLATE_ID,
+          this.params,
+          process.env.VUE_APP_EMAILJS_USER_ID
+        )
+        .then(
+          (result) => {
+            // eslint-disable-next-line
+            console.log("SUCCESS!", result.status, result.text);
+          },
+          (error) => {
+            // eslint-disable-next-line
+            console.log("FAILED...", error);
+          }
+        );
     },
   },
 };
