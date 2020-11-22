@@ -69,6 +69,8 @@ export default {
       alertMessage: "",
     };
   },
+  // TODO Contact - Add validation to contact form
+  // TODO Contact - Reset fields to "" when Send Another Message is clicked
   methods: {
     sendEmail: function () {
       emailjs
