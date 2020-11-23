@@ -10,11 +10,12 @@
         ></v-alert
       >
     </v-col>
-    <v-form v-else>
+    <v-form v-else v-model="form">
       <v-row dense>
         <v-col cols="12" md="4">
           <v-text-field
             v-model="params.fromName"
+            :rules="[rules.length(1)]"
             filled
             background-color="white"
             label="Name"
@@ -23,6 +24,7 @@
         <v-col cols="12" md="4">
           <v-text-field
             v-model="params.replyEmail"
+            :rules="[rules.length(1), rules.email]"
             filled
             background-color="white"
             label="Email"
@@ -33,6 +35,7 @@
         <v-col cols="12" md="8">
           <v-textarea
             v-model="params.message"
+            :rules="[rules.length(1)]"
             filled
             background-color="white"
             label="Message"
@@ -41,7 +44,9 @@
       </v-row>
       <v-row dense>
         <v-col cols="12" md="8">
-          <v-btn color="blue" @click="sendEmail">Submit</v-btn>
+          <v-btn color="blue" @click="sendEmail" :disabled="!form"
+            >Submit</v-btn
+          >
         </v-col>
       </v-row>
     </v-form>
@@ -64,10 +69,16 @@ export default {
         fromName: "",
         replyEmail: "",
       },
+      form: false,
       messageStatus: "info",
       alert: false,
       alertMessage: "",
       buttonMessage: "",
+      rules: {
+        email: (v) => !!(v || "").match(/@/) || "Please enter a valid email",
+        length: (len) => (v) =>
+          (v || "").length >= len || `This field is required`,
+      },
     };
   },
   // TODO Contact - Add validation to contact form
