@@ -5,7 +5,7 @@
         <v-row no-gutters
           ><v-col class="grow">{{ alertMessage }}</v-col>
           <v-col class="shrink">
-            <v-btn @click="alert = false">Send another message</v-btn>
+            <v-btn @click="resolveForm"> {{ buttonMessage }}</v-btn>
           </v-col></v-row
         ></v-alert
       >
@@ -67,12 +67,13 @@ export default {
       messageStatus: "info",
       alert: false,
       alertMessage: "",
+      buttonMessage: "",
     };
   },
   // TODO Contact - Add validation to contact form
   // TODO Contact - Reset fields to "" when Send Another Message is clicked
   methods: {
-    sendEmail: function () {
+    sendEmail: function() {
       emailjs
         .send(
           process.env.VUE_APP_EMAILJS_SERVICE_ID,
@@ -84,6 +85,7 @@ export default {
           (result) => {
             this.messageStatus = "success";
             this.alertMessage = "Message Sent";
+            this.buttonMessage = "Send Another Message";
             // eslint-disable-next-line
             console.log("SUCCESS!", result.status, result.text);
             this.alert = true;
@@ -91,11 +93,20 @@ export default {
           (error) => {
             this.messageStatus = "error";
             this.alertMessage = "Something went wrong";
+            this.buttonMessage = "Try Again";
             // eslint-disable-next-line
             console.log("FAILED...", error);
             this.alert = true;
           }
         );
+    },
+    resolveForm: function() {
+      this.alert = false;
+      if ("success" === this.messageStatus) {
+        this.params.fromName = "";
+        this.params.message = "";
+        this.params.replyEmail = "";
+      }
     },
   },
 };
