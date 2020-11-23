@@ -1,5 +1,5 @@
 <template>
-  <Module id="experience" title="Experience">
+  <Module id="experience" title="Experience" :action="action">
     <v-expansion-panels>
       <v-expansion-panel
         class="grey lighten-4"
@@ -59,6 +59,11 @@ export default {
   },
   data() {
     return {
+      action: {
+        name: "Download Resume",
+        file: "src/assets/logo.png",
+        icon: "mdi mdi-file-account",
+      },
       experiences: [
         {
           id: 1,
