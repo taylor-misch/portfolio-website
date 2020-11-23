@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^2.6.11",
+    "emailjs-com": "^2.6.4",
     "vue": "^2.6.12",
     "vue-meta": "^2.4.0",
     "vuetify": "^2.3.16"

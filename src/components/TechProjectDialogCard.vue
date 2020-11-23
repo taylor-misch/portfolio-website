@@ -40,8 +40,8 @@
           <v-col
             :class="$vuetify.breakpoint.smAndDown ? 'text-center' : ''"
             class="text-h5 font-weight-bold red--text text--darken-4"
-            >Links:</v-col
-          >
+            >Links:
+          </v-col>
           <v-col
             :class="$vuetify.breakpoint.smAndDown ? 'justify-center' : ''"
             class="d-flex flex-row flex-wrap"

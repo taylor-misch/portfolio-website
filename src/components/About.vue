@@ -17,6 +17,7 @@
         </h3>
       </v-col>
     </v-row>
+    <!-- TODO About - Add a skeleton loader for the image -->
     <v-row md6 class="justify-center">
       <v-col cols="11" md="8" xl="6">
         <v-img
