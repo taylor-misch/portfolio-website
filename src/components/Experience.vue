@@ -1,4 +1,5 @@
 <template>
+  <!-- <Module id="experience" title="Experience" :action="action"> -->
   <Module id="experience" title="Experience">
     <v-expansion-panels>
       <v-expansion-panel
@@ -59,6 +60,12 @@ export default {
   },
   data() {
     return {
+      action: {
+        name: "Download Resume",
+        file: "/TaylorMisch-Resume.pdf",
+        downloadName: "Taylor Misch - Resume.pdf",
+        icon: "mdi mdi-file-account",
+      },
       experiences: [
         {
           id: 1,
