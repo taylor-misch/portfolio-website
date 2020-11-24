@@ -61,7 +61,8 @@ export default {
     return {
       action: {
         name: "Download Resume",
-        file: "src/assets/logo.png",
+        file: "/TaylorMisch-Resume.pdf",
+        downloadName: "Taylor Misch - Resume.pdf",
         icon: "mdi mdi-file-account",
       },
       experiences: [

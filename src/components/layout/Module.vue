@@ -1,7 +1,7 @@
 <template>
   <v-container>
-    <v-row class="justify-center">
-      <v-col cols="12" lg="10">
+    <v-row>
+      <v-col cols="12" md="5" class="flex-grow-0 flex-shrink-1">
         <div
           class="body-1 red--text text--darken-4"
           :class="
@@ -13,25 +13,27 @@
           <h1>{{ title }}</h1>
         </div>
       </v-col>
-      <v-spacer></v-spacer>
-      <v-col v-if="action" cols="12" lg="2">
-        <a
-          class="body-1 red--text text--darken-4"
-          :class="
-            $vuetify.breakpoint.smAndDown
-              ? 'text-uppercase text-center'
-              : 'text-uppercase'
-          "
-          :href="action.file"
-          download
+      <v-col
+        v-if="action"
+        cols="12"
+        md="3"
+        style="max-width: 100%;"
+        class="d-flex flex-grow-1 flex-shrink-0"
+        :class="
+          $vuetify.breakpoint.smAndDown ? 'justify-center' : 'justify-end'
+        "
+      >
+        <v-chip
+          label
+          @click="downloadWithAxios(action.file, action.downloadName)"
+          color="blue darken-2"
+          class="white--text"
         >
-          <v-chip>
-            <v-icon :class="action.icon"></v-icon>
-            <div class="body-2 mx-3">
-              {{ action.name }}
-            </div>
-          </v-chip>
-        </a>
+          <v-icon :class="action.icon"></v-icon>
+          <div class="body-2 mx-2">
+            {{ action.name }}
+          </div>
+        </v-chip>
       </v-col>
     </v-row>
     <v-row class="align-center justify-center">
@@ -43,12 +45,37 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   props: {
     title: String,
     action: {
       type: Object,
       required: false,
+    },
+  },
+  methods: {
+    forceFileDownload(response, title) {
+      // eslint-disable-next-line
+      console.log(title);
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", title);
+      document.body.appendChild(link);
+      link.click();
+    },
+    downloadWithAxios(url, title) {
+      axios({
+        method: "get",
+        url,
+        responseType: "arraybuffer",
+      })
+        .then((response) => {
+          this.forceFileDownload(response, title);
+        })
+        // eslint-disable-next-line
+        .catch(() => console.log("error occured"));
     },
   },
 };
