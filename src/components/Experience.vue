@@ -1,5 +1,6 @@
 <template>
-  <Module id="experience" title="Experience" :action="action">
+  <!-- <Module id="experience" title="Experience" :action="action"> -->
+  <Module id="experience" title="Experience">
     <v-expansion-panels>
       <v-expansion-panel
         class="grey lighten-4"

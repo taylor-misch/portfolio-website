@@ -1,6 +1,7 @@
 <template>
   <v-container>
     <v-row>
+      <v-col v-if="$vuetify.breakpoint.xl" no-gutters cols="0" xl="1"></v-col>
       <v-col cols="12" md="5" class="flex-grow-0 flex-shrink-1">
         <div
           class="body-1 red--text text--darken-4"
@@ -17,7 +18,7 @@
         v-if="action"
         cols="12"
         md="3"
-        style="max-width: 100%;"
+        style="max-width: 100%"
         class="d-flex flex-grow-1 flex-shrink-0"
         :class="
           $vuetify.breakpoint.smAndDown ? 'justify-center' : 'justify-end'
@@ -35,6 +36,8 @@
           </div>
         </v-chip>
       </v-col>
+
+      <v-col v-if="$vuetify.breakpoint.xl" no-gutters cols="0" xl="1"></v-col>
     </v-row>
     <v-row class="align-center justify-center">
       <v-col cols="12" xl="10">

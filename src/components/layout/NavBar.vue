@@ -8,13 +8,13 @@
       ></v-img>
     </v-avatar>
     <v-toolbar-title
-      class="point ml-3 text-uppercase hidden-sm-and-down"
+      class="point ml-3 text-uppercase hidden-xs-only"
       @click="$vuetify.goTo('#home', options)"
       >Taylor Misch</v-toolbar-title
     >
     <v-spacer></v-spacer>
 
-    <v-toolbar-items class="hidden-xs-only">
+    <v-toolbar-items class="hidden-sm-and-down">
       <v-btn text @click="$vuetify.goTo('#home', options)">Home</v-btn>
       <v-btn text @click="$vuetify.goTo('#about', options)">About</v-btn>
       <v-btn text @click="$vuetify.goTo('#experience', options)"
@@ -40,7 +40,7 @@
         <v-app-bar-nav-icon
           x-large
           v-on="on"
-          class="hidden-sm-and-up"
+          class="hidden-md-and-up"
         ></v-app-bar-nav-icon>
       </template>
       <v-list :color="menuColor">
