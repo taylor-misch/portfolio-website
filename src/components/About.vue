@@ -24,7 +24,8 @@
           :src="require('@/assets/carousel/' + imageSource)"
           contain
           max-height="700px"
-        ></v-img>
+        >
+        </v-img>
       </v-col>
     </v-row>
   </Module>
