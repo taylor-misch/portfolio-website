@@ -64,7 +64,7 @@ export default {
       { title: "Experience", id: "#experience" },
       { title: "Projects", id: "#projects" },
       { title: "Interests", id: "#interests" },
-      { title: "Contact Me", id: "#contact" },
+      { title: "Contact", id: "#contact" },
     ],
     absolute: false,
     openOnHover: false,

@@ -10,7 +10,6 @@
             >
               Taylor Misch
             </div>
-            <!-- TODO - Transition to Material Design Icons -->
             <v-tooltip left>
               <template v-slot:activator="{ on }">
                 <a href="https://linkedin.com/in/taylor-misch">
@@ -38,19 +37,17 @@
               <span>GitHub</span>
             </v-tooltip>
 
-            <!-- TODO - update mail icon to be a resume download icon -->
             <v-tooltip right>
               <template v-slot:activator="{ on }">
-                <a href="mailto:taylormisch@gmail.com">
-                  <v-icon
-                    x-large
-                    color="red lighten-3"
-                    v-on="on"
-                    class="ma-3 fas fa-envelope"
-                  ></v-icon>
-                </a>
+                <v-icon
+                  x-large
+                  color="red lighten-3"
+                  v-on="on"
+                  class="mx-2 mdi mdi-file-account"
+                  @click="downloadWithAxios(action.file, action.downloadName)"
+                ></v-icon>
               </template>
-              <span>Email</span>
+              <span>Resume</span>
             </v-tooltip>
             <!-- TODO try to come up with a way to not have to use breakpoint -->
             <div class="display-1">
@@ -74,9 +71,41 @@
 </template>
 
 <script >
+import axios from "axios";
 export default {
   data() {
-    return {};
+    return {
+      action: {
+        name: "Download Resume",
+        file: "/TaylorMischResume-Blackout.pdf",
+        downloadName: "Taylor Misch - Resume.pdf",
+        icon: "mdi mdi-file-account",
+      },
+    };
+  },
+  methods: {
+    forceFileDownload(response, title) {
+      // eslint-disable-next-line
+      console.log(title);
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", title);
+      document.body.appendChild(link);
+      link.click();
+    },
+    downloadWithAxios(url, title) {
+      axios({
+        method: "get",
+        url,
+        responseType: "arraybuffer",
+      })
+        .then((response) => {
+          this.forceFileDownload(response, title);
+        })
+        // eslint-disable-next-line
+        .catch(() => console.log("error occured"));
+    },
   },
 };
 </script>
