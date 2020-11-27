@@ -77,9 +77,3 @@ export default {
 };
 </script>
 
-<style>
-.box {
-  display: flex;
-  flex-direction: row;
-}
-</style>
