@@ -17,14 +17,14 @@
         </h3>
       </v-col>
     </v-row>
-    <!-- TODO About - Add a skeleton loader for the image -->
     <v-row md6 class="justify-center">
       <v-col cols="11" md="8" xl="6">
         <v-img
           :src="require('@/assets/carousel/' + imageSource)"
           contain
           max-height="700px"
-        ></v-img>
+        >
+        </v-img>
       </v-col>
     </v-row>
   </Module>

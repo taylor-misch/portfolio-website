@@ -9,7 +9,6 @@
       >
         <v-expansion-panel-header>
           <v-row>
-            <!-- TODO find a way to conditionally apply logic -->
             <v-col
               :cols="$vuetify.breakpoint.mdAndUp ? '4' : '5'"
               :class="
@@ -27,7 +26,6 @@
               <strong>{{ experience.company }}</strong>
             </v-col>
 
-            <!-- TODO find a way to conditionally apply logic -->
             <v-col cols="7" pr-3 class="body-2 text-center hidden-md-and-up">
               <strong>{{ experience.company }}</strong>
               <br />
@@ -35,7 +33,6 @@
             </v-col>
           </v-row>
         </v-expansion-panel-header>
-        <!-- TODO - fix duplicate key error experience in expansion panels -->
         <v-expansion-panel-content>
           <ul>
             <li
