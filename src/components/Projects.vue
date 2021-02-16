@@ -1,5 +1,5 @@
 <template>
-  <Module id="projects" title="Projects and Certifications">
+  <Module id="projects" title="Projects & Certifications">
     <v-row>
       <v-col
         cols="6"
