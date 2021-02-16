@@ -1,5 +1,5 @@
 <template>
-  <Module id="projects" title="Projects">
+  <Module id="projects" title="Projects and Certifications">
     <v-row>
       <v-col
         cols="6"
@@ -28,6 +28,22 @@ export default {
     return {
       dialog: false,
       projects: [
+        {
+          name: "AWS Certified Cloud Practitioner",
+          logo: "aws-cloud-practitioner.png",
+          url:
+            "https://aws.amazon.com/certification/certified-cloud-practitioner/",
+          links: [
+            {
+              name: "Validation Page",
+              url: "http://aws.amazon.com/verification",
+              icon: "mdi mdi-information",
+            },
+          ],
+          skills: [],
+          summary:
+            "At the beginning of 2021, I found myself wanting to learn more about cloud computing and DevOps. AWS is an industry leader in both of those spaces, and their certification program caught my eye. After studying for about a month, I took the exam for the AWS Certified Cloud Practitioner and passed on February 3, 2021. My validation number is 6JBG994BJNFQ1Z96, which can be verified by clicking on the above button.",
+        },
         {
           name: "Bytepocket",
           logo: "bytepocket.jpg",
