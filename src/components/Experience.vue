@@ -64,15 +64,25 @@ export default {
       },
       experiences: [
         {
+          id: 0,
+          company: "Church Mutual Insurance Company, S.I.",
+          title: "New Application Developer",
+          dates: "March 2021 - Present",
+          outcomes: [
+            "Successfully launch and support the company's first external facing customer portal",
+            "Write integrations to support the role out of the company's new business process management system",
+          ],
+        },
+        {
           id: 1,
           company: "Church Mutual Insurance Company, S.I.",
           title: "Associate Developer",
-          dates: "June 2019 - Present",
+          dates: "June 2019 - March 2021",
           outcomes: [
-            "Develop RESTful services using the Spring Framework to support the implementation of the company’s first external facing customer and broker portal",
+            "Developed RESTful services using the Spring Framework to support the implementation of the company’s first external facing broker portal",
             "Technical lead on a project to create a RESTful service that generates certificate of liability insurance and evidence of property documents",
-            "Design and develop frontend enhancements for internal systems built with Vue.js and Vuetify frameworks",
-            "Suggest and introduce Apache PDFBox as an open-source solution for generating and editing PDFs",
+            "Designed and developed frontend enhancements for internal systems built with Vue.js and Vuetify frameworks",
+            "Suggested and introduced Apache PDFBox as an open-source solution for generating and editing PDFs",
           ],
         },
         {
