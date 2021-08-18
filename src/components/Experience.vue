@@ -58,7 +58,7 @@ export default {
     return {
       action: {
         name: "Download Resume",
-        file: "/TaylorMischResume-Blackout.pdf",
+        file: "/TaylorMischWebsiteResume.pdf",
         downloadName: "Taylor Misch - Resume.pdf",
         icon: "mdi mdi-file-account",
       },
