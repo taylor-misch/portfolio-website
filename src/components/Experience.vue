@@ -59,36 +59,35 @@ export default {
     return {
       action: {
         name: "Download Resume",
-        file: "/TaylorMischResume-Blackout.pdf",
+        file: "/TaylorMischWebsiteResume.pdf",
         downloadName: "Taylor Misch - Resume.pdf",
         icon: "mdi mdi-file-account",
       },
       experiences: [
         {
-          id: 1,
-          company: "Datasite",
-          title: "Software Engineer II",
-          dates: "September 2021 - Present",
+          id: 0,
+          company: "Church Mutual Insurance Company, S.I.",
+          title: "New Application Developer",
+          dates: "March 2021 - Present",
           outcomes: [
-            "Develop enhancements for pre-existing backend Spring Boot RESTful services used to support internal Angular frontend application",
-            "Leverage modern open-source tools like Docker, Kubernetes, RabbitMQ, and MongoDB to support Datasite's microservice architecture",
+            "Successfully launch and support the company's first external facing customer portal",
+            "Write integrations to support the role out of the company's new business process management system",
+          ],
+        },
+        {
+          id: 1,
+          company: "Church Mutual Insurance Company, S.I.",
+          title: "Associate Developer",
+          dates: "June 2019 - March 2021",
+          outcomes: [
+            "Developed RESTful services using the Spring Framework to support the implementation of the company’s first external facing broker portal",
+            "Technical lead on a project to create a RESTful service that generates certificate of liability insurance and evidence of property documents",
+            "Designed and developed frontend enhancements for internal systems built with Vue.js and Vuetify frameworks",
+            "Suggested and introduced Apache PDFBox as an open-source solution for generating and editing PDFs",
           ],
         },
         {
           id: 2,
-          company: "Church Mutual Insurance Company, S.I.",
-          title: "New Application Developer",
-          dates: "June 2019 - September 2021",
-          outcomes: [
-            "Co-lead team of developers implementing a new sales and underwriting automation workflow platform",
-            "Work with business partners to implement front-end enhancements for internal systems built with Vue.js and Vuetify frameworks",
-            "Served as technical lead to create a RESTful service that generates certificate of liability insurance and evidence of property documents using Java, Spring, and Apache PDFBox",
-            "Designed and developed multiple RESTful services to support implementation of the company’s first external facing customer and broker portal",
-            "Prepared and presented two technical topics for the company’s Java application development staff"
-          ],
-        },
-        {
-          id: 3,
           company: "University of Wisconsin - Eau Claire",
           title: "Bachelor of Science, Computer Science",
           dates: "August 2015 - May 2019",
@@ -101,21 +100,20 @@ export default {
           ],
         },
         {
-          id: 4,
+          id: 3,
           company: "Clearwater Labs",
           title: "Software Engineer",
           dates: "September 2018 - May 2019",
           outcomes: [
             "One of five founding members of student-run software development company with a focus to make software that improves campus life",
-            "Developed applications using MongoDB, Express, React, and Node.js (MERN) tech stack",
-            "Created a parking notification service that texts users to notify them of alternate side parking enforcement",
+            "Developed applications using Node.js, Express, React, and MongoDB",
+            "Created a 'winter-rules' parking notification service that let students know what side of the street they should park on when the city of Eau Claire needed to plow the streets",
             "Built a messaging service and admin dashboard that consumed Twilio’s REST APIs for the University of Wisconsin - Eau Claire's fundraising foundation",
-            "Leveraged Kanban boards and agile methodology along with GitHub for version control to complete work items",
-            "Effectively balanced part-time employment and self-directed workload with full-time student responsibilities"
+            "Leveraged Kanban boards and agile methodology along with GitHub for version control to complete work items while also studying as a full-time student",
           ],
         },
         {
-          id: 5,
+          id: 4,
           company: "Travelers Insurance",
           title: "IT Intern, Business Insurance Infrastructure Architecture",
           dates: "June - August 2018",
@@ -127,7 +125,7 @@ export default {
           ],
         },
         {
-          id: 6,
+          id: 5,
           company: "Church Mutual Insurance Company, S.I.",
           title: "IT Intern, Java Developer",
           dates: "May - August 2017",
@@ -139,7 +137,7 @@ export default {
           ],
         },
         {
-          id: 7,
+          id: 6,
           company: "Ashley Furniture Industries, Inc.",
           title: "IT Intern, Distribution",
           dates: "May 2016 - January 2017",
