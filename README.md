@@ -1,5 +1,7 @@
 # portfolio-website
 
+This is a website dedicated to me and various aspects of my life ranging from professional experience to hobbies
+
 ## Project setup
 ```
 npm install
